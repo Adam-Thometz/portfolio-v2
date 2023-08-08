@@ -1,6 +1,6 @@
 .loader {
   z-index: 10;
-  height: 100vh;
+  height: 125vh;
   width: 100vw;
   position: absolute;
   background-color: #131313;
@@ -20,7 +20,7 @@
 .numbers {
   font-size: 100px;
   position: absolute;
-  bottom: 10%;
+  bottom: 35vh;
   left: 10%;
   color: var(--accentGreen);
   font-family: "Space Mono";

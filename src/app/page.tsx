@@ -1,7 +1,5 @@
 import { Suspense } from 'react'
 
-// import styles from './page.module.css'
-
 import Navbar from '@/components/navbar/Navbar'
 import Loader from '@/components/loader/Loader'
 import Hero from '@/views/hero/Hero'
@@ -17,14 +15,14 @@ export default async function Home() {
   // const data = await getData();
   // const post = data.data.children[0].data.title
   return (
-    <main>
-      {/* <Suspense> */}
-      <Loader />
-      <Navbar />
-      <Hero />
-      <Projects />
-      <AboutMe />
-      {/* </Suspense> */}
+    <main id='app'>
+      <Suspense>
+        <Loader />
+        <Navbar />
+        <Hero />
+        <Projects />
+        <AboutMe />
+      </Suspense>
     </main>
   )
 }

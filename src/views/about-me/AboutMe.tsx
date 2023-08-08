@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
-import me from "../../../public/images/me2.png"
+import me from "../../../public/images/me2.webp"
 import links from '@/data/contactLinks';
 
 import styles from './aboutMe.module.css';

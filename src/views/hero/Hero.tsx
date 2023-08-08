@@ -1,7 +1,7 @@
 import styles from './hero.module.css'
 
 import Image from "next/image";
-import me from '../../../public/images/me.png';
+import me from '../../../public/images/me.webp';
 import Blurs from '@/components/background-blurs/multiple-blurs/Blurs';
 import { HEADER, PROJECT } from '@/data/constants';
 import DownArrow from '@/components/down-arrow/DownArrow';

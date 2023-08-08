@@ -20,7 +20,10 @@ export default function Navbar() {
       const section = document.getElementById(id) as HTMLElement;
       console.log(target)
       console.log(section)
-      section.scrollIntoView(true)
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      })
     }
   }
   return <nav className={styles.navbar}>

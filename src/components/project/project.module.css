@@ -4,7 +4,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  /* transform-origin: left top; */
 }
 
 /* .project:nth-child(1) {
@@ -36,4 +35,19 @@
 .gifWrapper {
   width: 60%;
   margin: 0 5rem;
+}
+
+@media (max-width: 1250px) {
+  .project {
+    flex-direction: column-reverse;
+    margin-top: 10rem;
+  }
+  .gifWrapper {
+    margin: 0 auto;
+  }
+  .projectInfo {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
 }

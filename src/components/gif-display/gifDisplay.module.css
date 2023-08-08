@@ -1,7 +1,7 @@
 .gifDisplay {
   background-color: white;
-  width: 45vw;
-  height: 50vh;
+  width: 40rem;
+  height: 29rem;
   transform: rotate(6.5deg) skew(-2deg, -2deg);
   border-radius: 15px;
   background: linear-gradient(135deg,
@@ -50,7 +50,7 @@
   justify-content: center;
   text-align: center;
   font-family: "Inter";
-  font-size: 1rem;
+  font-size: 1em;
   height: 60%;
   width: 50%;
   border-radius: 5.997px;
@@ -65,4 +65,23 @@
   width: 100%;
   height: 88%;
   border-radius: 0 0 15px 15px;
+}
+
+@media (max-width: 1250px) {
+  .gifDisplay {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .addressBar {
+    font-size: 1rem;
+  }
+  .smallButton {
+    width: 25%;
+    height: 1vh;
+  }
+}
+
+@media (max-width: 800px) {
+  
 }
