@@ -18,13 +18,13 @@ export default async function Home() {
   // const post = data.data.children[0].data.title
   return (
     <main>
-      <Suspense fallback={<Loader />}>
-        {/* <Loader /> */}
-        <Navbar />
-        <Hero />
-        <Projects />
-        <AboutMe />
-      </Suspense>
+      {/* <Suspense> */}
+      <Loader />
+      <Navbar />
+      <Hero />
+      <Projects />
+      <AboutMe />
+      {/* </Suspense> */}
     </main>
   )
 }
