@@ -13,7 +13,6 @@
 .imageWrapper {
   z-index: 1;
   width: 40%;
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +29,10 @@
 .textWrapper {
   z-index: 1;
   width: 45%;
+}
+
+.textLink {
+  color: var(--text);
 }
 
 .linkWrapper {

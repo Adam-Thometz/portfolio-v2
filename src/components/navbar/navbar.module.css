@@ -1,6 +1,7 @@
 .navbar {
   position: fixed;
   width: 94vw;
+  height: 10vh;
   top: 0;
   padding: 0.5rem 3rem;
   display: flex;
@@ -9,10 +10,30 @@
   z-index: 3;
 }
 
+.options {
+  display: relative;
+}
+
 .logo {
   width: 3.5rem;
   height: 3.5rem;
   cursor: pointer;
+}
+
+.hamburger {
+  position: absolute;
+  top: 2rem;
+  right: 7rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.close {
+  position: absolute;
+  top: -0.5rem;
+  right: 0rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .navButton {
@@ -21,4 +42,16 @@
   font-family: "Inter";
   margin-right: 2rem;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .options {
+    display: flex;
+    flex-direction: column;
+    transform: translate(-1vw, -20vh);
+    background-color: #1C1C1C;
+  }
+  .options > * {
+    margin: 1.1rem;
+  }
 }
