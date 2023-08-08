@@ -3,9 +3,10 @@ import { Project } from '@/data/types'
 import GifDisplay from '../gif-display/GifDisplay'
 import TechStack from '@/components/tech-stack/TechStack'
 import ButtonLink from '@/components/button/ButtonLink'
+import { PROJECT } from '@/data/constants'
 
 export default function ProjectPage({name, description, techStack, gif, liveLink, githubLink, fakeUrl}: Project) {
-  return <section className={styles.project}>
+  return <section className={styles.project} id={PROJECT}>
     <section className={styles.projectInfo}>
       <div className={styles.projectHeader}>
         <h2>{name}</h2>

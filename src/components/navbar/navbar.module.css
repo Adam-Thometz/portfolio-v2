@@ -12,6 +12,7 @@
 .logo {
   width: 3.5rem;
   height: 3.5rem;
+  cursor: pointer;
 }
 
 .navButton {
@@ -19,4 +20,5 @@
   text-decoration: none;
   font-family: "Inter";
   margin-right: 2rem;
+  cursor: pointer;
 }

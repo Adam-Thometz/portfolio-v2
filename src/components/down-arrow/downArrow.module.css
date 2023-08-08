@@ -1,0 +1,17 @@
+.arrow {
+  margin-top: 4rem;
+  animation: pulse 3s ease-in-out  infinite both;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
