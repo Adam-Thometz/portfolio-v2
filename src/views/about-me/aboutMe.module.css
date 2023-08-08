@@ -1,0 +1,41 @@
+.aboutMe {
+  height: 110vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-image: url(../../../public/images/waves2.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw 110vh;
+  position: relative;
+}
+
+.imageWrapper {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 60%;
+  height: 50%;
+  border: 7px solid #D9D9D9;
+  border-radius: 8px;
+  margin: 3rem;
+}
+
+.textWrapper {
+  width: 45%;
+}
+
+.linkWrapper {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.link:hover {
+  fill: #0FC;
+}

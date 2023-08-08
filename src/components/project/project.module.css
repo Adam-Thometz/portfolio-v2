@@ -1,0 +1,39 @@
+.project {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* transform-origin: left top; */
+}
+
+/* .project:nth-child(1) {
+  transform: rotate(90deg) translateY(-100vh) translateX(0);
+}
+.project:nth-child(2) {
+  transform: rotate(90deg) translateY(-100vh) translateX(30vw);
+}
+.project:nth-child(3) {
+  transform: rotate(90deg) translateY(-100vh) translateX(60vw);
+}
+.project:nth-child(4) {
+  transform: rotate(90deg) translateY(-100vh) translateX(90vw);
+} */
+
+.projectInfo {
+  height: 60vh;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 8rem;
+}
+
+.buttonWrapper {
+  margin: 1rem 0;
+}
+
+.gifWrapper {
+  width: 60%;
+  margin: 0 5rem;
+}

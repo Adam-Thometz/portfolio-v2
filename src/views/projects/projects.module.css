@@ -1,0 +1,19 @@
+.projects {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  position: relative;
+}
+
+.projectWrapper {
+  /* height: 100vw;
+  width: 100vh; */
+  overflow: hidden auto;
+  transform: translateY(-50vh);
+  /* transform-origin: right top;
+  transform: rotate(-90deg) translateY(-70vw); */
+}
+
+.projectWrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,13 @@
+.blur {
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+  height: 1258.643px;
+  width: 639.055px;
+  flex-shrink: 0;
+  border-radius: 1258.643px;
+  background: radial-gradient(82.01% 70.88% at 38.11% 44.97%, rgba(11, 191, 155, 0.23) 37.50%, rgba(90, 11, 191, 0.45) 55.21%, rgba(191, 11, 54, 0.45) 100%);
+  mix-blend-mode: difference;
+  filter: blur(233.5px);
+}
