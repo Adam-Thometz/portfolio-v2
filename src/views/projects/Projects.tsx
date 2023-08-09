@@ -1,6 +1,6 @@
 import ProjectPage from '@/components/project/ProjectPage'
 import styles from "./projects.module.css"
-import SingleBlur from '@/components/background-blurs/single-blur/SingleBlur'
+import SingleBlur from '@/components/background/single-blur/SingleBlur'
 
 import projects from '@/data/projectInfo'
 import { PROJECTS } from '@/data/constants'

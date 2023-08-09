@@ -4,7 +4,7 @@ import me from "../../../public/images/me2.webp"
 import links from '@/data/contactLinks';
 
 import styles from './aboutMe.module.css';
-import Blurs from '@/components/background-blurs/multiple-blurs/Blurs';
+import Blurs from '@/components/background/multiple-blurs/Blurs';
 import { ABOUT_ME, PROJECT } from '@/data/constants';
 
 export default function AboutMe() {
