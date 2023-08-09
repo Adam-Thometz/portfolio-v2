@@ -61,9 +61,7 @@ export default function Navbar() {
       className={styles.logo}
       onClick={goTo}
     />
-    {window.screen.width < 500
-      ? <Image src={hamburger} alt="" onClick={openMenu} className={styles.hamburger} />
-      : null}
+    <Image src={hamburger} alt="" onClick={openMenu} className={styles.hamburger} />
     <section className={styles.options} ref={menuRef}>
       <Image src={close} alt="close" className={styles.close} onClick={closeMenu} />
       <Link

@@ -1,12 +1,12 @@
 .aboutMe {
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   
   background-image: url(../../../public/images/waves2.svg);
   background-repeat: no-repeat;
-  background-size: 100vw 110vh;
+  background-size: 110vw 110vh;
   position: relative;
 }
 
@@ -36,10 +36,10 @@
 }
 
 .linkWrapper {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .link:hover {

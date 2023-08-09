@@ -26,6 +26,7 @@
   right: 7rem;
   width: 2rem;
   height: 2rem;
+  display: none;
 }
 
 .close {
@@ -54,6 +55,9 @@
   }
   .options > * {
     margin: 1.1rem;
+  }
+  .hamburger {
+    display: block;
   }
   .close {
     display: block;

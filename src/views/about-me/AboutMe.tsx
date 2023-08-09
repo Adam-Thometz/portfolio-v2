@@ -16,9 +16,9 @@ export default function AboutMe() {
     <section className={styles.textWrapper}>
       <h1>About Me</h1>
       <article>
-        <p>Before software, I worked as a special education teacher in the NYC public school system, mostly teaching music to autistic kids in grades K-5. I got into coding by building apps for my students, which resulted in <Link href={`${PROJECT}-Art-Buddy`} className={styles.textLink}>Art Buddy</Link>. From there, the rest is history!</p>
+        <p>Before software, I worked as a special education teacher in the NYC public school system, mostly teaching music to autistic kids in grades K-5. I got into coding by building apps for my students, which resulted in <Link href={`#${PROJECT}-Art-Buddy`} className={styles.textLink}>Art Buddy</Link>. From there, the rest is history!</p>
         <br />
-        <p>When I&apos;m not coding, I produce music under the name Tesla&apos;s Ghost. I also enjoy cooking, meditating, kung fu, and growing plants. I currently live in the Bronx with my fiancee, my cat, and my blue tongue skink. I also identify as neurodivergent.</p>
+        <p>When I&apos;m not coding, I produce electronic, prog metal-sounding music under the name Tesla&apos;s Ghost (Soundcloud link below). I also enjoy cooking, meditating, kung fu, and plants. I currently live in the Bronx with my fiancee, my cat, and my blue tongue skink. I also identify as neurodivergent.</p>
       </article>
       <div className={styles.linkWrapper}>
         {links.map(link => (

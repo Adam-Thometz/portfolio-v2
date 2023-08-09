@@ -18,12 +18,12 @@ const projects: Project[] = [
   },
   {
     name: "AI Assistant @ TARA",
-    description: "A collection of AI-powered tools designed to cut down teacher workloads while nudging them toward best practices. Made with the OpenAI API. Login required to try. Github goes to very early prototype.",
+    description: "A collection of AI-powered tools designed to cut down teacher workloads while nudging them toward best practices. Made with the OpenAI API. Live link goes to video demo. Github goes to very early prototype. Type in URL on the right to go to app.",
     techStack: getTechStack(["Javascript", "Vue", "CSS", "Python", "Django", "AWS"]),
     gif: AI_ASSISTANT,
-    liveLink: new URL("https://app.taraedtech.com/login/"),
+    liveLink: new URL("https://youtu.be/Hsfz6F5kQiI"),
     githubLink: new URL("https://github.com/Adam-Thometz/Exam-Generator-Prototype"),
-    fakeUrl: "tarateachers.com"
+    fakeUrl: "app.taraedtech.com"
   },
   {
     name: "Vesta Healing",
