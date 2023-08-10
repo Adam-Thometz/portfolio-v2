@@ -5,15 +5,18 @@ import { useParallax } from "react-scroll-parallax";
 
 import styles from "./circles.module.css";
 import circlesImg from "../../../../public/images/circles.svg";
-import { MutableRefObject, useRef } from "react";
+import { RefObject, useRef } from "react";
 
 export default function Circles() {
-  const target: MutableRefObject<HTMLElement | null> = useRef(null)
+  const target: RefObject<HTMLElement | undefined> = useRef()
   const circles = useParallax({
     speed: 75,
+    // @ts-ignore
     targetElement: target.current,
   })
+  // @ts-ignore
   return <div className={styles.circleContainer} ref={target}>
+    {/* @ts-ignore */}
     <Image src={circlesImg} alt="" className={styles.circles} ref={circles.ref}/>
   </div>
 }
