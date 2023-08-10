@@ -12,13 +12,19 @@
 }
 
 .icon {
-  width: 1.25rem;
-  height: 1.25rem;
-  /* filter: contrast(200%) saturate(200%); */
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: contrast(200%) saturate(200%);
   mix-blend-mode: luminosity;
   margin: 1rem 0;
 }
 
 .caption {
   font-family: "Space Mono";
+}
+
+@media (max-width: 1250px) {
+  .techStack {
+    grid-template-columns: repeat(3, 7rem);
+  }
 }

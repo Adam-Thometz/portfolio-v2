@@ -4,9 +4,11 @@ import GifDisplay from '../gif-display/GifDisplay'
 import TechStack from '@/components/tech-stack/TechStack'
 import ButtonLink from '@/components/button/ButtonLink'
 import { PROJECT } from '@/data/constants'
+import SingleBlur from '@/components/background/single-blur/SingleBlur'
 
-export default function ProjectPage({name, description, techStack, gif, liveLink, githubLink, fakeUrl}: Project) {
+export default function Project({name, description, techStack, gif, liveLink, githubLink, fakeUrl}: Project) {
   return <section className={styles.project} id={`${PROJECT}-${name.replaceAll(/ /g, '-')}`}>
+    <SingleBlur />
     <section className={styles.projectInfo}>
       <div className={styles.projectHeader}>
         <h2>{name}</h2>

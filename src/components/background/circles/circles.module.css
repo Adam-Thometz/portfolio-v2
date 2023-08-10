@@ -1,0 +1,23 @@
+.circleContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 45%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.circles {
+  opacity: 0.4;
+}
+
+@media (max-width: 500px) {
+  .circleContainer {
+    top: -20vh;
+  }
+
+  .circles {
+    transform: translateX(20vh);
+  }
+}

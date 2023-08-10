@@ -40,18 +40,11 @@ export default function Navbar() {
     }
   }
 
-  const goTo = (e: SyntheticEvent): void => {
-    const target = e.target as HTMLElement;
-    const id: string | undefined = target.dataset.id;
-    if (id) {
-      const section = document.getElementById(id) as HTMLElement;
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      })
-    } else {
-      alert('Unknown element...');
-    }
+  const goToTop = (): void => {
+    document.body.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
   }
   return <nav className={styles.navbar}>
     <Image
@@ -59,7 +52,9 @@ export default function Navbar() {
       alt="Developer logo"
       data-id={HEADER}
       className={styles.logo}
-      onClick={goTo}
+      onClick={goToTop}
+      onKeyDown   ={goToTop}
+      tabIndex={0}
     />
     <Image src={hamburger} alt="" onClick={openMenu} className={styles.hamburger} />
     <section className={styles.options} ref={menuRef}>
@@ -68,7 +63,6 @@ export default function Navbar() {
         href={`#${PROJECTS}`}
         data-id={PROJECTS}
         className={styles.navButton}
-        onClick={goTo}
       >
         Projects
       </Link>
@@ -76,7 +70,6 @@ export default function Navbar() {
         href={`#${ABOUT_ME}`}
         data-id={ABOUT_ME}
         className={styles.navButton}
-        onClick={goTo}
       >
         About Me
       </Link>

@@ -1,7 +1,5 @@
 import { Suspense } from 'react'
 
-import Navbar from '@/components/navbar/Navbar'
-import Loader from '@/components/loader/Loader'
 import Hero from '@/views/hero/Hero'
 import Projects from '@/views/projects/Projects'
 import AboutMe from '@/views/about-me/AboutMe'
@@ -17,8 +15,6 @@ export default async function Home() {
   return (
     <main id='app'>
       <Suspense>
-        <Loader />
-        <Navbar />
         <Hero />
         <Projects />
         <AboutMe />

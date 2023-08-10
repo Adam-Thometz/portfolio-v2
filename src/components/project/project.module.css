@@ -3,29 +3,23 @@
   width: 100vw;
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
+  transform: translateY(-10vh);
+  scroll-snap-align: start;
 }
 
-/* .project:nth-child(1) {
-  transform: rotate(90deg) translateY(-100vh) translateX(0);
+.projectHeader {
+  width: 70%;
 }
-.project:nth-child(2) {
-  transform: rotate(90deg) translateY(-100vh) translateX(30vw);
-}
-.project:nth-child(3) {
-  transform: rotate(90deg) translateY(-100vh) translateX(60vw);
-}
-.project:nth-child(4) {
-  transform: rotate(90deg) translateY(-100vh) translateX(90vw);
-} */
 
 .projectInfo {
   height: 60vh;
-  width: 40%;
+  width: 64vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-left: 8rem;
+  justify-content: center;
+  margin-left: 8vw;
 }
 
 .buttonWrapper {
@@ -33,14 +27,13 @@
 }
 
 .gifWrapper {
-  width: 60%;
-  margin: 0 5rem;
+  width: 70vw;
+  margin-left: 8vw;
 }
 
 @media (max-width: 1250px) {
   .project {
     flex-direction: column-reverse;
-    margin-top: 10rem;
   }
   .gifWrapper {
     margin: 0 auto;
@@ -50,4 +43,25 @@
     margin: 0 auto;
     align-items: center;
   }
+}
+
+@media (min-width: 1250px) {
+  /* .project {
+    flex-direction: unset;
+  }
+  .projectInfo {
+    justify-content: space-between;
+  } */
+  /* .project:nth-child(1) {
+    transform: rotate(90deg) translate(15vw, 15vh);
+  }
+  .project:nth-child(2) {
+    transform: rotate(90deg) translate(60vw, 15vh);
+  }
+  .project:nth-child(3) {
+    transform: rotate(90deg) translate(90vw, 15vh);
+  }
+  .project:nth-child(4) {
+    transform: rotate(90deg) translate(120vw, 15vh);
+  } */
 }

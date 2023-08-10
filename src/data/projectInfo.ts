@@ -9,21 +9,21 @@ import EIGHT_BIT_CLAN from '../../public/gifs/8-bit-clan.gif';
 const projects: Project[] = [
   {
     name: "Art Buddy",
-    description: "A collection of arts-based games and tools designed specifically for the special education classroom and reaching students' academic goals.",
-    techStack: getTechStack(["Javascript", "React", "Redux", "CSS", "Jest", "Python", "AWS", "PostgresQL"]),
+    description: "Arts-based and goal-aligned games and tools for the special education classroom.",
+    techStack: getTechStack(["Javascript", "React", "Redux", "CSS", "Jest"]),
     gif: ART_BUDDY,
     liveLink: new URL("https://art-buddy.surge.sh/"),
     githubLink: new URL("https://github.com/Adam-Thometz/Art-Buddy"),
-    fakeUrl: "artbuddy.com"
+    fakeUrl: "art.buddy"
   },
   {
     name: "AI Assistant @ TARA",
-    description: "A collection of AI-powered tools designed to cut down teacher workloads while nudging them toward best practices. Made with the OpenAI API. Live link goes to video demo. Github goes to very early prototype. Type in URL on the right to go to app.",
+    description: "AI-powered tools to reduce teacher workloads. Github goes to very early prototype.",
     techStack: getTechStack(["Javascript", "Vue", "CSS", "Python", "Django", "AWS"]),
     gif: AI_ASSISTANT,
     liveLink: new URL("https://youtu.be/Hsfz6F5kQiI"),
     githubLink: new URL("https://github.com/Adam-Thometz/Exam-Generator-Prototype"),
-    fakeUrl: "app.taraedtech.com"
+    fakeUrl: "tara.teachers"
   },
   {
     name: "Vesta Healing",
@@ -32,7 +32,7 @@ const projects: Project[] = [
     gif: VESTA,
     liveLink: new URL("https://www.vestahealingnyc.org/"),
     githubLink: new URL("https://github.com/Adam-Thometz/Vesta-Healing"),
-    fakeUrl: "vestahealingnyc.org"
+    fakeUrl: "vesta.healing"
   },
   {
     name: "8-Bit Clan",
@@ -41,7 +41,7 @@ const projects: Project[] = [
     gif: EIGHT_BIT_CLAN,
     liveLink: new URL("https://8-bit-clan.surge.sh/"),
     githubLink: new URL("https://github.com/Adam-Thometz/8-Bit-Clan"),
-    fakeUrl: "8bitclan.com"
+    fakeUrl: "8-bit.clan"
   },
 ];
 

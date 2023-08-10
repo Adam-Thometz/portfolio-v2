@@ -2,27 +2,7 @@
   height: 150vh;
   width: 100vw;
   position: relative;
-  /* overflow: hidden; */
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  left: 5%;
-  top: 10%;
-  width: 80%;
-  min-height: 45%;
-  opacity: 0.4;
-  background-image: url(../../../public/images/waves.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 100% 100%;
-}
-
-.waves {
-  opacity: 0.4;
-  position: absolute;
-  width: 100vw;
+  scroll-snap-align: start;
 }
 
 .header {
@@ -32,6 +12,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 65%;
+  z-index: 2;
 }
 
 .image {

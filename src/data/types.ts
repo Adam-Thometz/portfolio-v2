@@ -12,7 +12,7 @@ export type Project = {
   liveLink: URL,
   githubLink: URL,
   fakeUrl?: string,
-  gif: StaticImageData
+  gif: StaticImageData,
 };
 
 export type LinkInfo = {
