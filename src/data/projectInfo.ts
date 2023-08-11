@@ -44,15 +44,15 @@ const projects: Project[] = [
     githubLink: new URL("https://github.com/Adam-Thometz/8-Bit-Clan"),
     fakeUrl: "8-bit.clan"
   },
-  {
-    name: "This Portfolio!",
-    description: "Hopefully this is pretty self-explanatory.",
-    techStack: getTechStack(["Typescript", "NextJS", "CSS", "AWS"]),
-    gif: PORTFOLIO,
-    liveLink: new URL("https://www.adamthometz.com/"),
-    githubLink: new URL("https://github.com/Adam-Thometz/portfolio-v2"),
-    fakeUrl: "adam.thometz"
-  },
+  // {
+  //   name: "This Portfolio!",
+  //   description: "Hopefully this is pretty self-explanatory.",
+  //   techStack: getTechStack(["Typescript", "NextJS", "CSS", "AWS"]),
+  //   gif: PORTFOLIO,
+  //   liveLink: new URL("https://www.adamthometz.com/"),
+  //   githubLink: new URL("https://github.com/Adam-Thometz/portfolio-v2"),
+  //   fakeUrl: "adam.thometz"
+  // },
 ];
 
 export default projects;
