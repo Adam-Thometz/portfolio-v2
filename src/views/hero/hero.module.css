@@ -28,3 +28,14 @@
   font-size: 1.5rem;
   line-height: 3rem;
 }
+
+@media (max-width: 500px) {
+  .header {
+    width: 90%;
+  }
+
+  .text {
+    font-size: 1.125rem;
+    line-height: 1.68rem;
+  }
+}

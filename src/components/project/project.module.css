@@ -3,7 +3,7 @@
   width: 100vw;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   transform: translateY(-10vh);
   scroll-snap-align: start;
@@ -14,16 +14,16 @@
 }
 
 .projectInfo {
-  height: 60vh;
+  height: 50vh;
   width: 64vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 8vw;
 }
 
 .buttonWrapper {
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .gifWrapper {
@@ -34,34 +34,22 @@
 @media (max-width: 1250px) {
   .project {
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .gifWrapper {
     margin: 0 auto;
+    transform: translateY(-5vh);
   }
   .projectInfo {
     width: 90%;
     margin: 0 auto;
     align-items: center;
   }
-}
-
-@media (min-width: 1250px) {
-  /* .project {
-    flex-direction: unset;
+  .projectHeader {
+    width: 95%;
   }
-  .projectInfo {
-    justify-content: space-between;
-  } */
-  /* .project:nth-child(1) {
-    transform: rotate(90deg) translate(15vw, 15vh);
+  .projectHeader > * {
+    /* width: 95%; */
+    line-height: 2rem;
   }
-  .project:nth-child(2) {
-    transform: rotate(90deg) translate(60vw, 15vh);
-  }
-  .project:nth-child(3) {
-    transform: rotate(90deg) translate(90vw, 15vh);
-  }
-  .project:nth-child(4) {
-    transform: rotate(90deg) translate(120vw, 15vh);
-  } */
 }

@@ -1,13 +1,13 @@
 .gifDisplay {
   background-color: white;
-  width: 40rem;
-  height: 29rem;
-  transform: rotate(6.5deg) skew(-2deg, -2deg);
+  width: 49rem;
+  height: 36rem;
+  transform: rotate(6.5deg) skew(-2deg, -2deg) translateX(-8vw);
   border-radius: 15px;
   background: linear-gradient(135deg,
-  rgba(111, 111, 111, 0.1) 0%,
-  rgba(255, 255, 255, 0.10) 30%,
-  rgba(124, 107, 107, 0.1) 100%);
+    rgba(111, 111, 111, 0.1) 0%,
+    rgba(255, 255, 255, 0.10) 30%,
+    rgba(124, 107, 107, 0.1) 100%);
   backdrop-filter: blur(8px);
 }
 
@@ -69,7 +69,7 @@
 
 @media (max-width: 1250px) {
   .gifDisplay {
-    width: 100%;
+    width: 120%;
     height: 100%;
     margin: 0 auto;
   }
@@ -83,5 +83,7 @@
 }
 
 @media (max-width: 800px) {
-  
+  .addressBar {
+    font-size: 0.6rem;
+  }
 }

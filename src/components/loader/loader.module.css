@@ -25,3 +25,10 @@
   color: var(--accentGreen);
   font-family: "Space Mono";
 }
+
+@media (max-width: 500px) {
+  .loader {
+    height: 110vh;
+    transform: translateY(-10vh);
+  }
+}

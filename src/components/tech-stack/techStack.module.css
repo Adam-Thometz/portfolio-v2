@@ -7,8 +7,8 @@
 .techStackCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 1rem 0;
+  align-items: flex-start;
+  margin: 0.5rem 0;
 }
 
 .icon {
@@ -26,5 +26,8 @@
 @media (max-width: 1250px) {
   .techStack {
     grid-template-columns: repeat(3, 7rem);
+  }
+  .techStackCard {
+    align-items: center;
   }
 }

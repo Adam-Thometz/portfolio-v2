@@ -24,10 +24,11 @@
 .hamburger {
   position: absolute;
   top: 2rem;
-  right: 7rem;
-  width: 2rem;
-  height: 2rem;
+  right: 7.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: none;
+  /* padding: 24px; */
 }
 
 .close {

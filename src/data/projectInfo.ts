@@ -27,7 +27,7 @@ const projects: Project[] = [
   },
   {
     name: "Vesta Healing",
-    description: "A simple landing page to advertise the services of a local psychotherapist.",
+    description: "A nicely styled landing page to advertise the services of a local psychotherapist.",
     techStack: getTechStack(["Javascript", "React", "CSS", "AWS"]),
     gif: VESTA,
     liveLink: new URL("https://www.vestahealingnyc.org/"),

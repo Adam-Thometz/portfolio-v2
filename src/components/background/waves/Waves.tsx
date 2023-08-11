@@ -5,6 +5,12 @@ import styles from "./waves.module.css";
 
 export default function Waves() {
   return <div className={styles.wavesWrapper}>
-    <Image src={waves} alt="" className={styles.waves} fill={true} objectFit="cover" />
+    <Image
+      src={waves}
+      alt=""
+      className={styles.waves}
+      fill={true}
+      objectFit="cover"
+    />
   </div>
 }
