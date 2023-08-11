@@ -25,15 +25,15 @@ export default function Navbar() {
   const openMenu = (): void => {
     // @ts-ignore
     menuRef.current.animate([
-      { transform: "translate(-5vw, -20vh)" },
-      { transform: "translate(-5vw, 4.5vh)" },
+      { transform: "translate(-5vw, -100%)" },
+      { transform: "translate(-5vw, 23%)" },
     ], OPTIONS);
   }
   const closeMenu = (): void => {
     // @ts-ignore
     menuRef.current.animate([
-      { transform: "translate(-5vw, 4.5vh)" },
-      { transform: "translate(-5vw, -20vh)" },
+      { transform: "translate(-5vw, 23%)" },
+      { transform: "translate(-5vw, -100%)" },
     ], OPTIONS);
   }
 

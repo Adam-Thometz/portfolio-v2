@@ -26,7 +26,8 @@
 @media (max-width: 1250px) {
   .techStack {
     grid-template-columns: repeat(3, 7rem);
-    margin: 0 0 2rem 0;
+    height: 60%;
+    margin: 0;
   }
   .techStackCard {
     align-items: center;

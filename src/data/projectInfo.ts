@@ -17,8 +17,8 @@ const projects: Project[] = [
     fakeUrl: "art.buddy"
   },
   {
-    name: "AI Assistant @ TARA",
-    description: "AI-powered tools to reduce teacher workloads. Github goes to very early prototype.",
+    name: "AI Assistant",
+    description: "AI-powered tools to reduce teacher workloads. Made for edtech startup TARA. Github goes to very early prototype.",
     techStack: getTechStack(["Javascript", "Vue", "CSS", "Python", "Django", "AWS"]),
     gif: AI_ASSISTANT,
     liveLink: new URL("https://youtu.be/Hsfz6F5kQiI"),

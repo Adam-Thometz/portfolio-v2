@@ -4,13 +4,11 @@ import me from "../../../public/images/me2.webp"
 import links from '@/data/contactLinks';
 
 import styles from './aboutMe.module.css';
-import Blurs from '@/components/background/multiple-blurs/Blurs';
 import { ABOUT_ME, PROJECT } from '@/data/constants';
 import Waves from '@/components/background/waves/Waves';
 
 export default function AboutMe() {
   return <section className={styles.aboutMe} id={ABOUT_ME}>
-    {/* <Blurs heightStyle='100vh' /> */}
     <Waves />
     <aside className={styles.imageWrapper}>
       <Image
@@ -29,7 +27,7 @@ export default function AboutMe() {
       <div className={styles.linkWrapper}>
         {links.map(link => (
           <Link key={link.name} href={link.url.toString()} target='_blank'>
-            <Image src={link.icon} alt={link.name} className={styles.link} />
+            <Image src={link.icon} alt={link.name} className={styles.link} objectFit="cover" />
           </Link>
         ))}
       </div>

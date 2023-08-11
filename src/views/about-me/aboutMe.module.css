@@ -53,11 +53,12 @@
   .imageWrapper {
     width: 75%;
     height: 35vh;
+    overflow: hidden;
   }
   .image {
     border-radius: 50%;
-    height: 24vh;
-    width: 70%;
+    height: 25vh;
+    width: 50%;
   }
   .textWrapper {
     width: 90%;
