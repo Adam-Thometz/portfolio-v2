@@ -47,7 +47,7 @@ const projects: Project[] = [
   {
     name: "This Portfolio!",
     description: "Hopefully this is pretty self-explanatory.",
-    techStack: getTechStack(["Typescript", "NextJS"]),
+    techStack: getTechStack(["Typescript", "NextJS", "CSS", "AWS"]),
     gif: PORTFOLIO,
     liveLink: new URL("https://www.adamthometz.com/"),
     githubLink: new URL("https://github.com/Adam-Thometz/portfolio-v2"),
