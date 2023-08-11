@@ -49,7 +49,15 @@
     width: 95%;
   }
   .projectHeader > * {
-    /* width: 95%; */
     line-height: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .buttonWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 }

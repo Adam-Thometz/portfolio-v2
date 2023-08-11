@@ -31,4 +31,7 @@
     height: 110vh;
     transform: translateY(-10vh);
   }
+  .numbers {
+    bottom: 15vh;
+  }
 }

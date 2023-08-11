@@ -7,7 +7,6 @@ import { PROJECT } from '@/data/constants'
 
 export default function Project({name, description, techStack, gif, liveLink, githubLink, fakeUrl}: Project) {
   return <section className={styles.project} id={`${PROJECT}-${name.replaceAll(/ /g, '-')}`}>
-    {/* <SingleBlur /> */}
     <section className={styles.projectInfo}>
       <div className={styles.projectHeader}>
         <h2>{name}</h2>

@@ -1,7 +1,7 @@
 .techStack {
   display: grid;
-  grid-template-columns: repeat(4, 7rem);
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(4, 8rem);
+  margin: 2rem 0 3rem 0;
 }
 
 .techStackCard {
@@ -26,6 +26,7 @@
 @media (max-width: 1250px) {
   .techStack {
     grid-template-columns: repeat(3, 7rem);
+    margin: 0 0 2rem 0;
   }
   .techStackCard {
     align-items: center;

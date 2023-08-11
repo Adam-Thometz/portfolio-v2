@@ -21,7 +21,7 @@ export default function Loader() {
       const timer = setTimeout(() => {
         setPercent(percent+1);
         clearTimeout(timer);
-      }, Math.random() * 75)
+      }, Math.random() * 100)
     }
   }, [percent]);
 
