@@ -14,10 +14,12 @@ import Python from "../../public/images/tech-stack-icons/python.png";
 import React from "../../public/images/tech-stack-icons/reactJS.png";
 import Redux from "../../public/images/tech-stack-icons/redux.png";
 import Vue from "../../public/images/tech-stack-icons/vue.png";
+import NextJS from "../../public/images/tech-stack-icons/nextJS.png";
+import Typescript from "../../public/images/tech-stack-icons/typescript.png";
 
 const techStackIcons: {[k: string]: StaticImageData} = {
   // Frontend
-  Javascript, React, Redux, jQuery, CSS, Vue,
+  Javascript, Typescript, React, Redux, jQuery, CSS, Vue, NextJS,
   // Backend
   Python, Flask, Django, PostgresQL, Node, Express,
   // Other

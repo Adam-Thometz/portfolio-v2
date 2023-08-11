@@ -5,6 +5,7 @@ import ART_BUDDY from '../../public/gifs/art-buddy.gif';
 import AI_ASSISTANT from '../../public/gifs/ai-assistant.gif';
 import VESTA from '../../public/gifs/vesta.gif';
 import EIGHT_BIT_CLAN from '../../public/gifs/8-bit-clan.gif';
+import PORTFOLIO from '../../public/gifs/portfolio.gif';
 
 const projects: Project[] = [
   {
@@ -42,6 +43,15 @@ const projects: Project[] = [
     liveLink: new URL("https://8-bit-clan.surge.sh/"),
     githubLink: new URL("https://github.com/Adam-Thometz/8-Bit-Clan"),
     fakeUrl: "8-bit.clan"
+  },
+  {
+    name: "This Portfolio!",
+    description: "Hopefully this is pretty self-explanatory.",
+    techStack: getTechStack(["Typescript", "NextJS"]),
+    gif: PORTFOLIO,
+    liveLink: new URL("https://www.adamthometz.com/"),
+    githubLink: new URL("https://github.com/Adam-Thometz/portfolio-v2"),
+    fakeUrl: "adam.thometz"
   },
 ];
 

@@ -15,7 +15,7 @@
   width: 1.5rem;
   height: 1.5rem;
   filter: contrast(200%) saturate(200%);
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
   margin: 1rem 0;
 }
 
