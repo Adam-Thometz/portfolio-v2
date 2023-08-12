@@ -1,15 +1,16 @@
 "use client";
+import { useRef } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
 
+import styles from "./navbar.module.css";
+
+import ButtonLink from "../button/ButtonLink";
+
 import logo from "../../../public/images/logo.svg";
 import hamburger from "../../../public/images/hamburger.svg";
 import close from "../../../public/images/close.svg";
-
-import styles from "./navbar.module.css";
-import ButtonLink from "../button/ButtonLink";
-import { useRef } from "react";
 
 import { HEADER, ABOUT_ME, RESUME_LINK, PROJECTS } from '../../data/constants';
 

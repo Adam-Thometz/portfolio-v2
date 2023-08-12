@@ -1,11 +1,11 @@
-import { Project } from "./types";
-import getTechStack from "@/lib/getTechStack";
-
 import ART_BUDDY from '../../public/gifs/art-buddy.gif';
 import AI_ASSISTANT from '../../public/gifs/ai-assistant.gif';
 import VESTA from '../../public/gifs/vesta.gif';
 import EIGHT_BIT_CLAN from '../../public/gifs/8-bit-clan.gif';
 // import PORTFOLIO from '../../public/gifs/portfolio.gif';
+
+import getTechStack from "@/lib/getTechStack";
+import { Project } from "./types";
 
 const projects: Project[] = [
   {

@@ -1,11 +1,12 @@
 import { StaticImageData } from "next/image";
 import Image from "next/image";
+
 import styles from "./gifDisplay.module.css";
 
 type Props = {
   gif: StaticImageData,
   fakeUrl: string | URL
-}
+};
 
 export default function GifDisplay({gif, fakeUrl}: Props) {
   const urlDisplay = typeof fakeUrl === "string"

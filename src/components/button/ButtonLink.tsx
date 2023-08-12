@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+
 import styles from "./buttonLink.module.css";
 
 type Props = {

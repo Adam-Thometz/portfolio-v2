@@ -3,6 +3,7 @@
   overflow-x: hidden;
   overflow-y: visible;
   width: 100vw;
+  height: 150vh;
   z-index: 1;
 }
 

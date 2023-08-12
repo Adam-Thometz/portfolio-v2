@@ -1,10 +1,12 @@
 "use client";
+import { ParallaxProvider } from "react-scroll-parallax";
 
-import Script from 'next/script';
-import '../styles/global.css';
-import { ParallaxProvider } from 'react-scroll-parallax';
-import Navbar from '@/components/navbar/Navbar'
-import Loader from '@/components/loader/Loader'
+import Script from "next/script";
+
+import "../styles/global.css";
+
+import Navbar from "@/components/navbar/Navbar";
+import Loader from "@/components/loader/Loader";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

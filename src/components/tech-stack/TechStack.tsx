@@ -1,10 +1,12 @@
-import { TechStack } from "@/data/types"
-import Image from "next/image"
-import styles from './techStack.module.css';
+import Image from "next/image";
+
+import styles from "./techStack.module.css";
+
+import { TechStack } from "@/data/types";
 
 type Props = {
   tech: TechStack[]
-}
+};
 
 export default function TechStack({tech}: Props) {
   return <div className={styles.techStack}>

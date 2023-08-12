@@ -1,9 +1,10 @@
-import Project from '@/components/project/Project'
-import styles from "./projects.module.css"
+import styles from "./projects.module.css";
 
-import projects from '@/data/projectInfo'
-import { PROJECTS } from '@/data/constants'
-import SingleBlur from '@/components/background/single-blur/SingleBlur'
+import Project from "@/components/project/Project";
+import SingleBlur from "@/components/background/single-blur/SingleBlur";
+
+import projects from "@/data/projectInfo";
+import { PROJECTS } from "@/data/constants";
 
 export default function Projects() {
   return <section className={styles.projects} id={PROJECTS}>

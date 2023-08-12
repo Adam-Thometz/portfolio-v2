@@ -1,11 +1,14 @@
-import styles from './hero.module.css'
-
 import Image from "next/image";
-import me from '../../../public/images/me.webp';
-import Blurs from '@/components/background/multiple-blurs/Blurs';
-import { HEADER, PROJECTS } from '@/data/constants';
-import Arrow from '@/components/arrow/Arrow';
-import Circles from '@/components/background/circles/Circles';
+
+import styles from "./hero.module.css";
+
+import Blurs from "@/components/background/multiple-blurs/Blurs";
+import Arrow from "@/components/arrow/Arrow";
+import Circles from "@/components/background/circles/Circles";
+
+import me from "../../../public/images/me.webp";
+
+import { HEADER, PROJECTS } from "@/data/constants";
 
 export default function Hero() {
   return <header className={styles.hero} id={HEADER}>

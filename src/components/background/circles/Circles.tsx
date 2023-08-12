@@ -1,11 +1,12 @@
 "use client";
+import { useParallax } from "react-scroll-parallax";
+import { useRef } from "react";
 
 import Image from "next/image";
-import { useParallax } from "react-scroll-parallax";
 
 import styles from "./circles.module.css";
+
 import circlesImg from "../../../../public/images/circles.svg";
-import { useRef } from "react";
 
 export default function Circles() {
   const target = useRef<HTMLElement>(null)

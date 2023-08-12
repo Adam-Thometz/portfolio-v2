@@ -1,9 +1,11 @@
-import styles from './project.module.css'
-import { Project } from '@/data/types'
-import GifDisplay from '../gif-display/GifDisplay'
-import TechStack from '@/components/tech-stack/TechStack'
-import ButtonLink from '@/components/button/ButtonLink'
-import { PROJECT } from '@/data/constants'
+import styles from "./project.module.css";
+
+import GifDisplay from "../gif-display/GifDisplay";
+import TechStack from "@/components/tech-stack/TechStack";
+import ButtonLink from "@/components/button/ButtonLink";
+
+import { Project } from "@/data/types";
+import { PROJECT } from "@/data/constants";
 
 export default function Project({name, description, techStack, gif, liveLink, githubLink, fakeUrl}: Project) {
   return <section className={styles.project} id={`${PROJECT}-${name.replaceAll(/ /g, '-')}`}>

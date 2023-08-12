@@ -1,10 +1,12 @@
 "use client"
+import { useEffect, useState, useRef } from "react";
 
 import Image from "next/image";
-import logo from "../../../public/images/logo.svg"
 
-import styles from "./loader.module.css"
-import { useEffect, useState, useRef } from "react";
+import styles from "./loader.module.css";
+
+import logo from "../../../public/images/logo.svg";
+
 import { disableScroll, enableScroll } from "@/lib/scroll";
 
 export default function Loader() {

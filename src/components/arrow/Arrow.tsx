@@ -1,7 +1,10 @@
 "use client"
+
 import Image from "next/image";
-import arrow from "../../../public/images/arrow.svg";
+
 import styles from "./arrow.module.css";
+
+import arrow from "../../../public/images/arrow.svg";
 
 type Props = {
   id: string

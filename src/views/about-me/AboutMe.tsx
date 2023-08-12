@@ -1,11 +1,14 @@
-import Image from 'next/image'
-import Link from 'next/link';
-import me from "../../../public/images/me2.webp"
-import links from '@/data/contactLinks';
+import Image from "next/image";
+import Link from "next/link";
 
-import styles from './aboutMe.module.css';
-import { ABOUT_ME, PROJECT } from '@/data/constants';
-import Waves from '@/components/background/waves/Waves';
+import styles from "./aboutMe.module.css";
+
+import Waves from "@/components/background/waves/Waves";
+
+import me from "../../../public/images/me2.webp";
+
+import links from "@/data/contactLinks";
+import { ABOUT_ME, PROJECT } from "@/data/constants";
 
 export default function AboutMe() {
   return <section className={styles.aboutMe} id={ABOUT_ME}>

@@ -1,9 +1,9 @@
-import { LinkInfo } from "./types";
-
 import GITHUB from "../../public/images/icons/github.svg";
 import LINKEDIN from "../../public/images/icons/linkedin.svg";
 import YOUTUBE from "../../public/images/icons/youtube.svg";
 import SOUNDCLOUD from "../../public/images/icons/soundcloud.svg";
+
+import { LinkInfo } from "./types";
 
 const links: LinkInfo[] = [
   {
