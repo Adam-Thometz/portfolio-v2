@@ -10,7 +10,7 @@ import { Project } from "./types";
 const projects: Project[] = [
   {
     name: "Art Buddy",
-    description: "Arts-based and goal-aligned games and tools for the special education classroom.",
+    description: "Arts-based and goal-aligned games and tools for the special education classroom. Includes 400+ software tests",
     techStack: getTechStack(["Javascript", "React", "Redux", "CSS", "Jest"]),
     gif: ART_BUDDY,
     liveLink: new URL("https://art-buddy.surge.sh/"),
