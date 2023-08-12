@@ -19,7 +19,7 @@ const projects: Project[] = [
   },
   {
     name: "AI Assistant @ TARA",
-    description: "GPT-powered tools that that reduce teacher workflows. Github goes to pre-NDA prototype.",
+    description: "GPT-powered tools that help teachers create goals, quizzes, and tasks. Github goes to NDA-friendly prototype.",
     techStack: getTechStack(["Javascript", "Vue", "CSS", "Python", "Django", "AWS"]),
     gif: AI_ASSISTANT,
     liveLink: new URL("https://youtu.be/Hsfz6F5kQiI"),

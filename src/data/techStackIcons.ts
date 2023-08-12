@@ -8,20 +8,22 @@ import Flask from "../../public/images/tech-stack-icons/flask.png";
 import Javascript from "../../public/images/tech-stack-icons/javascript.png";
 import Jest from "../../public/images/tech-stack-icons/jest.png";
 import jQuery from "../../public/images/tech-stack-icons/jquery.png";
+import NextJS from "../../public/images/tech-stack-icons/nextJS.png";
 import Node from "../../public/images/tech-stack-icons/nodeJS.png";
 import PostgresQL from "../../public/images/tech-stack-icons/postgresql.png";
 import Python from "../../public/images/tech-stack-icons/python.png";
+import FastAPI from "../../public/images/tech-stack-icons/fastapi.png";
 import React from "../../public/images/tech-stack-icons/reactJS.png";
+import Redis from "../../public/images/tech-stack-icons/redis.png";
 import Redux from "../../public/images/tech-stack-icons/redux.png";
-import Vue from "../../public/images/tech-stack-icons/vue.png";
-import NextJS from "../../public/images/tech-stack-icons/nextJS.png";
 import Typescript from "../../public/images/tech-stack-icons/typescript.png";
+import Vue from "../../public/images/tech-stack-icons/vue.png";
 
 const techStackIcons: {[k: string]: StaticImageData} = {
   // Frontend
   Javascript, Typescript, React, Redux, jQuery, CSS, Vue, NextJS,
   // Backend
-  Python, Flask, Django, PostgresQL, Node, Express,
+  Python, Flask, Django, FastAPI, Node, Express, PostgresQL, Redis,
   // Other
   Jest, AWS,
 }
