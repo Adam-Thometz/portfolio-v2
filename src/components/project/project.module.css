@@ -41,7 +41,7 @@
   }
   .projectInfo {
     width: 90%;
-    height: 40%;
+    height: 50%;
     margin: 0 auto;
     align-items: center;
   }
@@ -54,13 +54,14 @@
 }
 
 @media (max-width: 400px) {
-  .project {
-    justify-content: space-evenly;
-  }
   .buttonWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
   }
+}
+
+@media (max-height: 700px) {
+  
 }

@@ -5,7 +5,7 @@ import ART_BUDDY from '../../public/gifs/art-buddy.gif';
 import AI_ASSISTANT from '../../public/gifs/ai-assistant.gif';
 import VESTA from '../../public/gifs/vesta.gif';
 import EIGHT_BIT_CLAN from '../../public/gifs/8-bit-clan.gif';
-import PORTFOLIO from '../../public/gifs/portfolio.gif';
+// import PORTFOLIO from '../../public/gifs/portfolio.gif';
 
 const projects: Project[] = [
   {
@@ -18,8 +18,8 @@ const projects: Project[] = [
     fakeUrl: "art.buddy"
   },
   {
-    name: "AI Assistant",
-    description: "AI-powered tools to reduce teacher workloads. Made for edtech startup TARA. Github goes to very early prototype.",
+    name: "AI Assistant @ TARA",
+    description: "GPT-powered tools that that reduce teacher workflows. Github goes to pre-NDA prototype.",
     techStack: getTechStack(["Javascript", "Vue", "CSS", "Python", "Django", "AWS"]),
     gif: AI_ASSISTANT,
     liveLink: new URL("https://youtu.be/Hsfz6F5kQiI"),

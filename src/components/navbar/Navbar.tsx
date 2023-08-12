@@ -20,7 +20,24 @@ const OPTIONS: KeyframeAnimationOptions = {
 }
 
 export default function Navbar() {
+  // const navRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLElement>(null);
+  // const [scrollY, setScrollY] = useState(0)
+
+  // window.addEventListener("scroll", () => {
+  //   if (navRef.current) {
+  //     if (scrollY < window.scrollY) {
+  //       // @ts-ignore
+  //       console.log({...navRef.current})
+  //       navRef.current.style.transform = "translateY(-10vh)"
+  //     } else {
+  //       // @ts-ignore
+  //       console.log({...navRef.current})
+  //       navRef.current.style.transform = "translateY(0)"
+  //     }
+  //     setScrollY(window.scrollY);
+  //   }
+  // });
 
   const openMenu = (): void => {
     // @ts-ignore

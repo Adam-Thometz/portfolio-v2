@@ -13,15 +13,13 @@ export default function Loader() {
 
   useEffect(() => {
     if (percent == 100) {
+      if (ref.current) ref.current.style.transform = "translateY(-125vh)";
       enableScroll();
-      if (ref.current) {
-        ref.current.style.transform = "translateY(-125vh)";
-      }
     } else {
       const timer = setTimeout(() => {
         setPercent(percent+1);
         clearTimeout(timer);
-      }, Math.random() * 75)
+      }, Math.random() * 60);
     }
   }, [percent]);
 

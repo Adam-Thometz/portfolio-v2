@@ -33,3 +33,9 @@
   transition: background-color, 1s;
   background-color: rgba(0, 255, 204, 0.10);
 }
+
+@media (max-width: 400px) {
+  .buttonLink {
+    padding: 0.7rem 2rem;
+  }
+}
