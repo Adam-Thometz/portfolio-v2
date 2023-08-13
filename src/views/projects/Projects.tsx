@@ -9,7 +9,7 @@ import { PROJECTS } from "@/data/constants";
 export default function Projects() {
   return <section className={styles.projects} id={PROJECTS}>
     <SingleBlur />
-    {/* <div className={styles.projectWrapper}> */}
+    <div className={styles.projectWrapper}>
     {projects.map((project, i) => (
       <Project
         key={`project-${i}`}
@@ -22,6 +22,6 @@ export default function Projects() {
         fakeUrl={project.fakeUrl}
       />
     ))}
-    {/* </div> */}
+    </div>
   </section>
 }

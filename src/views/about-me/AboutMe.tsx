@@ -9,10 +9,12 @@ import me from "../../../public/images/me2.webp";
 
 import links from "@/data/contactLinks";
 import { ABOUT_ME, PROJECT } from "@/data/constants";
+import Blurs from "@/components/background/multiple-blurs/Blurs";
 
 export default function AboutMe() {
   return <section className={styles.aboutMe} id={ABOUT_ME}>
     <Waves />
+    <Blurs noOverflow />
     <aside className={styles.imageWrapper}>
       <Image
         className={styles.image}
@@ -23,9 +25,9 @@ export default function AboutMe() {
     <section className={styles.textWrapper}>
       <h1>About Me</h1>
       <article>
-        <p className={styles.text}>Before software, I was a teacher in the NYC public school system, mostly teaching music to autistic kids. I got into coding during the pandemic and by 2021, I was building apps for my classes (see <Link href={`#${PROJECT}-Art-Buddy`} className={styles.textLink}>Art Buddy</Link>).</p>
+        <p className={styles.text}>Before software, I was a teacher in NYC public schools, mostly teaching music to autistic kids. I started learning to code in 2020 and a year later, I was building apps for my classes (see <Link href={`#${PROJECT}-Art-Buddy`} className={styles.textLink}>Art Buddy</Link>).</p>
         <br />
-        <p className={styles.text}>When I&apos;m not coding, I create electronic prog rock-like music as Tesla&apos;s Ghost. I also enjoy cooking, meditating, kung fu, and learning Spanish and Arabic. I live in the Bronx with my fiancee, my cat, and my blue tongue skink. I am also neurodivergent.</p>
+        <p className={styles.text}>When I&apos;m not coding, I create electronic prog rock as Tesla&apos;s Ghost. I also enjoy cooking, meditating, kung fu, and learning Spanish and Arabic. I live in the Bronx with my fiancee, my cat, and my blue tongue skink. I am also neurodivergent.</p>
       </article>
       <div className={styles.linkWrapper}>
         {links.map(link => (

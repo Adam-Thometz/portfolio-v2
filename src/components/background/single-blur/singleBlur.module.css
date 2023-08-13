@@ -1,5 +1,5 @@
 .blur {
-  position: sticky;
+  position: absolute;
   top: 15%;
   height: 39rem;
   width: 100%;
@@ -12,4 +12,5 @@
   mix-blend-mode: difference;
   filter: blur(233.5px);
   overflow-x: hidden;
+
 }

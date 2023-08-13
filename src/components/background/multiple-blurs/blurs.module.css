@@ -1,7 +1,6 @@
 .blurs {
   position: absolute;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
   width: 100vw;
   height: 150vh;
   z-index: 1;

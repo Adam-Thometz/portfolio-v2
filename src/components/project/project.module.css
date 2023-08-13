@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  scroll-snap-align: start;
 }
 
 .projectHeader {
@@ -34,7 +33,6 @@
   .project {
     flex-direction: column-reverse;
     justify-content: center;
-    transform: translateY(-10%);
   }
   .gifWrapper {
     margin: 0 auto;
