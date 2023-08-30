@@ -17,7 +17,7 @@ export default function Hero() {
     <section className={styles.header}>
       <Image src={me} alt='The developer' className={styles.image} />
       <h1>Hello! My name is Adam</h1>
-      <p className={styles.text}>I&apos;m a NYC based full-stack engineer who specializes in frontend and AI integration</p>
+      <p className={styles.text}>I&apos;m a NYC based full-stack engineer, specializing in frontend</p>
       <Arrow id={PROJECTS} />
     </section>
   </header>
