@@ -9,9 +9,9 @@ type Props = {
   download?: boolean
 };
 
-export default function ButtonLink({isPrimary, url, children, download}: Props) {
+export default function ButtonLink({isPrimary, url, children }: Props) {
   const className = `${styles.buttonLink} ${isPrimary ? styles.primary : styles.secondary}`;
-  return <Link className={className} href={url.toString()} target="_blank" download={download}>
+  return <Link className={className} href={url.toString()} target="_blank">
     {children}
   </Link>
 }
