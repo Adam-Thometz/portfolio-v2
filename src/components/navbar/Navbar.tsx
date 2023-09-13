@@ -87,7 +87,6 @@ export default function Navbar() {
       <ButtonLink
         isPrimary={true}
         url={RESUME_LINK}
-        download
       >
         Resume
       </ButtonLink>
