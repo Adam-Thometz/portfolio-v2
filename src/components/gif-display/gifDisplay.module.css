@@ -11,10 +11,6 @@
   backdrop-filter: blur(8px);
 }
 
-.small {
-  /* transform: none; */
-}
-
 .fakeNav {
   height: 12%;
   position: relative;
