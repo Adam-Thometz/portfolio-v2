@@ -9,9 +9,9 @@ export type Project = {
   name: string,
   description: string,
   techStack: TechStack[],
-  liveLink: URL,
+  liveLink: URL | string,
   githubLink: URL,
-  fakeUrl?: string,
+  fakeUrl: string,
   gif: StaticImageData,
 };
 

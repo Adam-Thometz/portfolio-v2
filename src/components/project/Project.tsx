@@ -8,7 +8,15 @@ import ButtonLink from "../button/ButtonLink";
 import { Project } from "@/data/types";
 import { PROJECT } from "@/data/constants";
 
-export default function Project({name, description, techStack, gif, liveLink, githubLink, fakeUrl}: Project) {
+export default function Project({
+  description,
+  fakeUrl,
+  gif,
+  githubLink,
+  liveLink,
+  name,
+  techStack,
+}: Project) {
   return <section className={styles.project} id={`${PROJECT}-${name.replaceAll(/ /g, '-')}`}>
     <SingleBlur />
     <section className={styles.projectInfo}>
@@ -23,7 +31,7 @@ export default function Project({name, description, techStack, gif, liveLink, gi
       </div>
     </section>
     <aside className={styles.gifWrapper}>
-      <GifDisplay gif={gif} fakeUrl={fakeUrl ? fakeUrl : liveLink} />
+      <GifDisplay gif={gif} fakeUrl={fakeUrl} />
     </aside>
   </section>
 }

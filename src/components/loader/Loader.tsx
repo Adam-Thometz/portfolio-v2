@@ -7,7 +7,7 @@ import styles from "./loader.module.css";
 
 import logo from "../../../public/images/logo.svg";
 
-import { disableScroll, enableScroll } from "@/lib/scroll";
+import { disableScroll, enableScroll } from "@/utils/scroll";
 
 export default function Loader() {
   const [percent, setPercent] = useState(0);
