@@ -1,0 +1,14 @@
+.bigBlur {
+  position: absolute;
+  width: 200%;
+  height: 180%;
+  top: -6%;
+  left: -15%;
+  transform: rotate(23.72deg);
+  z-index: -1;
+
+  border-radius: 200.30469rem;
+  background: radial-gradient(82.01% 70.88% at 38.11% 44.97%, rgba(11, 191, 155, 0.23) 37.5%, rgba(90, 11, 191, 0.45) 55.21%, rgba(191, 11, 54, 0.45) 100%);
+  mix-blend-mode: difference;
+  filter: blur(594.5596313476562px);
+}

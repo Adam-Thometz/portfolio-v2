@@ -1,0 +1,22 @@
+.playground {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.playgroundHeader {
+  padding: 10vh 10vw;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  gap: 4vw;
+  width: 90%;
+  justify-items: flex-start;
+  margin: 0 auto;
+  padding: 0 10vw;
+}
+

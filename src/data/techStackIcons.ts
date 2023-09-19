@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 import AWS from "../../public/images/tech-stack-icons/aws.png";
 import CSS from "../../public/images/tech-stack-icons/css.png";
+import C_PP from "../../public/images/tech-stack-icons/cpp.png";
 import Django from "../../public/images/tech-stack-icons/django.png";
 import Express from "../../public/images/tech-stack-icons/expressJS.png";
 import Flask from "../../public/images/tech-stack-icons/flask.png";
@@ -25,7 +26,7 @@ const techStackIcons: {[k: string]: StaticImageData} = {
   // Backend
   Python, Flask, Django, FastAPI, Node, Express, PostgresQL, MongoDB,
   // Other
-  Jest, AWS,
+  Jest, AWS, "C++": C_PP
 }
 
 export default techStackIcons;

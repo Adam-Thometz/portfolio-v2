@@ -1,0 +1,18 @@
+.smallProject {
+  width: 90%;
+  padding-bottom: 10vh;
+}
+
+.buttonWrapper {
+  margin: 1rem 0;
+  z-index: 5;
+}
+
+@media (max-width: 400px) {
+  .buttonWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+}
