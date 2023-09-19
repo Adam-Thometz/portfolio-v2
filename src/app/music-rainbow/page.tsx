@@ -3,7 +3,7 @@ import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 
 const MUSIC_RAINBOW_URL = "https://adam-thometz.github.io/Polyrhythm-Arduino/";
-const TONE_JS_CDN = "http://unpkg.com/tone"
+const TONE_JS_CDN = "https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js";
 
 export default function MusicRainbowProject() {
   const appRef = useRef<HTMLDivElement | null>(null);
