@@ -6,7 +6,7 @@ import Projects from "@/views/projects/Projects";
 import AboutMe from "@/views/about-me/AboutMe";
 import Playground from "@/views/playground/Playground";
 
-export default async function Home() {
+export default function Home() {
   return (
     <main id='app'>
       <Suspense>
