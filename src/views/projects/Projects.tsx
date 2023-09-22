@@ -16,7 +16,7 @@ export default function Projects() {
         name={project.name}
         description={project.description}
         techStack={project.techStack}
-        gif={project.gif}
+        mp4={project.mp4}
         liveLink={project.liveLink}
         githubLink={project.githubLink}
         fakeUrl={project.fakeUrl}

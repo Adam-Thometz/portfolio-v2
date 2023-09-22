@@ -1,15 +1,12 @@
-import { StaticImageData } from "next/image";
-import Image from "next/image";
-
 import styles from "./gifDisplay.module.css";
 
 type Props = {
-  gif: StaticImageData,
+  mp4: string,
   fakeUrl: string | URL,
   small?: boolean
 };
 
-export default function GifDisplay({gif, fakeUrl, small}: Props) {
+export default function GifDisplay({mp4, fakeUrl, small}: Props) {
   const urlDisplay = typeof fakeUrl === "string"
     ? fakeUrl
     : fakeUrl.toString();
@@ -28,6 +25,8 @@ export default function GifDisplay({gif, fakeUrl, small}: Props) {
       </div>
       <div className={styles.addressBar}>{urlDisplay}</div>
     </div>
-    <Image className={styles.gif} src={gif} alt="" />
+    <div className={styles.mp4Wrapper}>
+      <video src={mp4} className={styles.mp4} autoPlay loop muted />
+    </div>
   </div>
 }

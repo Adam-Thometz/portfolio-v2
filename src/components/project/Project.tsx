@@ -11,7 +11,7 @@ import { PROJECT } from "@/data/constants";
 export default function Project({
   description,
   fakeUrl,
-  gif,
+  mp4,
   githubLink,
   liveLink,
   name,
@@ -31,7 +31,7 @@ export default function Project({
       </div>
     </section>
     <aside className={styles.gifWrapper}>
-      <GifDisplay gif={gif} fakeUrl={fakeUrl} />
+      <GifDisplay mp4={mp4} fakeUrl={fakeUrl} />
     </aside>
   </section>
 }

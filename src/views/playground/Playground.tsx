@@ -20,7 +20,7 @@ export default function Playground() {
           techStack={project.techStack}
           liveLink={project.liveLink}
           githubLink={project.githubLink}
-          gif={project.gif}
+          mp4={project.mp4}
           fakeUrl={project.fakeUrl}
         />
       ))}
