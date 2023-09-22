@@ -32,7 +32,7 @@ export default function AboutMe() {
       <div className={styles.linkWrapper}>
         {links.map(link => (
           <Link key={link.name} href={link.url.toString()} target='_blank'>
-            <Image src={link.icon} alt={link.name} className={styles.link} objectFit="cover" />
+            <Image src={link.icon} alt={link.name} className={styles.link} />
           </Link>
         ))}
       </div>
