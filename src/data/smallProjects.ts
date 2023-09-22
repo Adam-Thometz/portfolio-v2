@@ -28,7 +28,7 @@ const smallProjects: Project[] = [
   },
   {
     name: "Natural Language To SQL",
-    description: "Convert a human query to a SQL one with AI. Live goes to Youtube demo",
+    description: "Convert a human query to a SQL one with AI. Live goes to Youtube demo. Take the code and try it on your data",
     techStack: getTechStack(["Python", "Pandas", "SQL"]),
     gif: NL_TO_SQL,
     liveLink: new URL("https://www.youtube.com/watch?v=Z-5s4YT52Cg"),
