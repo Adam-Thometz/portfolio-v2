@@ -40,7 +40,7 @@ const smallProjects: Project[] = [
   },
   {
     name: "Portfolio",
-    description: "I mean, this portfolio was a labor of love after all.",
+    description: "Bob's your uncle",
     techStack: getTechStack(["NextJS", "Typescript"]),
     mp4: "mp4s/portfolio.mp4",
     liveLink: new URL("https://www.adamthometz.com/"),
