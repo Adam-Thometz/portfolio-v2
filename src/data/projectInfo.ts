@@ -1,7 +1,6 @@
 import ART_BUDDY from '../../public/gifs/art-buddy.gif';
 import AI_ASSISTANT from '../../public/gifs/ai-assistant.gif';
 import VESTA from '../../public/gifs/vesta.gif';
-import EIGHT_BIT_CLAN from '../../public/gifs/8-bit-clan.gif';
 
 import getTechStack from "@/utils/getTechStack";
 import { Project } from "./types";
@@ -19,7 +18,7 @@ const projects: Project[] = [
   {
     name: "AI Assistant @ TARA",
     description: "GPT-powered tools that help teachers create goals, quizzes, and tasks. Github goes to NDA-friendly prototype.",
-    techStack: getTechStack(["Javascript", "Vue", "CSS", "Python", "Django", "AWS"]),
+    techStack: getTechStack(["Javascript", "Vue", "CSS", "Python", "Django", "AWS", "Node"]),
     gif: AI_ASSISTANT,
     liveLink: new URL("https://youtu.be/Hsfz6F5kQiI"),
     githubLink: new URL("https://github.com/Adam-Thometz/Exam-Generator-Prototype"),
@@ -33,15 +32,6 @@ const projects: Project[] = [
     liveLink: new URL("https://www.vestahealingnyc.org/"),
     githubLink: new URL("https://github.com/Adam-Thometz/Vesta-Healing"),
     fakeUrl: "vesta.healing"
-  },
-  {
-    name: "8-Bit Clan",
-    description: "An app that makes 8-bit NFTs. Placed in the top 5% in the Mintbean Hiring Hackathon.",
-    techStack: getTechStack(["Javascript", "Node", "Express", "React", "PostgresQL"]),
-    gif: EIGHT_BIT_CLAN,
-    liveLink: new URL("https://8-bit-clan.surge.sh/"),
-    githubLink: new URL("https://github.com/Adam-Thometz/8-Bit-Clan"),
-    fakeUrl: "8-bit.clan"
   },
 ];
 
