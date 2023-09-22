@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./waves.module.css";
 
-import waves from "../../../../public/images/waves.svg";
+import waves from "../../../../public/images/waves.png";
 
 export default function Waves() {
   return <div className={styles.wavesWrapper}>
@@ -11,7 +11,6 @@ export default function Waves() {
       alt=""
       className={styles.waves}
       fill={true}
-      objectFit="cover"
     />
   </div>
 }
