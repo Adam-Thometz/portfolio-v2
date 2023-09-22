@@ -15,7 +15,7 @@ const smallProjects: Project[] = [
     gif: MUSIC_RAINBOW,
     liveLink: "/music-rainbow",
     githubLink: new URL("https://github.com/Adam-Thometz/Polyrhythm-Arduino"),
-    fakeUrl: "music.rainbow"
+    fakeUrl: "music.rainbow",
   },
   {
     name: "Browser Music Video",
@@ -24,7 +24,7 @@ const smallProjects: Project[] = [
     gif: ACCEPTANCE_CAVE,
     liveLink: new URL("https://main.d26vd7jd4udjgm.amplifyapp.com/"),
     githubLink: new URL("https://github.com/Adam-Thometz/Polyrhythm-Arduino"),
-    fakeUrl: "acceptance.cave"
+    fakeUrl: "acceptance.cave",
   },
   {
     name: "Natural Language To SQL",
@@ -33,7 +33,7 @@ const smallProjects: Project[] = [
     gif: NL_TO_SQL,
     liveLink: new URL("https://www.youtube.com/watch?v=Z-5s4YT52Cg"),
     githubLink: new URL("https://github.com/Adam-Thometz/Natural-Language-to-SQL"),
-    fakeUrl: "sql.english",
+    fakeUrl: "human.sql",
   },
   {
     name: "8-Bit Clan",
@@ -42,7 +42,7 @@ const smallProjects: Project[] = [
     gif: EIGHT_BIT_CLAN,
     liveLink: new URL("https://8-bit-clan.surge.sh/"),
     githubLink: new URL("https://github.com/Adam-Thometz/8-Bit-Clan"),
-    fakeUrl: "8-bit.clan"
+    fakeUrl: "clan.nft",
   },
   {
     name: "Portfolio",
@@ -51,7 +51,7 @@ const smallProjects: Project[] = [
     gif: PORTFOLIO,
     liveLink: new URL("https://www.adamthometz.com/"),
     githubLink: new URL("https://github.com/Adam-Thometz/portfolio-v2"),
-    fakeUrl: "adam.thometz"
+    fakeUrl: "adam.thometz",
   },
 ];
 
