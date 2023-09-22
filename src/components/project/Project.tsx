@@ -30,7 +30,7 @@ export default function Project({
         <ButtonLink url={githubLink}>Github</ButtonLink>
       </div>
     </section>
-    <aside className={styles.gifWrapper}>
+    <aside className={styles.movWrapper}>
       <GifDisplay mp4={mp4} fakeUrl={fakeUrl} />
     </aside>
   </section>

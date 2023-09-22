@@ -25,8 +25,8 @@
   z-index: 1;
 }
 
-.gifWrapper {
-  width: 70%;
+.movWrapper {
+  /* width: 0%; */
   margin-left: 9%;
 }
 
@@ -35,7 +35,7 @@
     flex-direction: column-reverse;
     justify-content: center;
   }
-  .gifWrapper {
+  .movWrapper {
     margin: 0 auto;
   }
   .projectInfo {

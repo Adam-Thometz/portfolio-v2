@@ -71,10 +71,15 @@
   border-radius: 0 0 15px 15px;
 }
 
+.small {
+  transform: rotate(0) skew(0,0) translateX(0);
+  height: 40vh;
+}
+
 @media (max-width: 1250px) {
   .gifDisplay {
-    width: 70%;
-    height: 90%;
+    width: 60%;
+    height: 40%;
     margin: 0 auto;
     transform: rotate(6.5deg) skew(-2deg, -2deg);
   }
@@ -84,6 +89,14 @@
   .smallButton {
     width: 25%;
     height: 1vh;
+  }
+  .small {
+    transform: rotate(0) skew(0,0) translateX(0);
+    width: 90%;
+    height: 30vh;
+  }
+  .mp4Wrapper {
+    width: 100%;
   }
 }
 
@@ -95,8 +108,13 @@
 
 @media (max-width: 500px) {
   .gifDisplay {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     transform: rotate(6.5deg) skew(-2deg, -2deg) translateY(-30%);
+  }
+  .small {
+    transform: rotate(0) skew(0,0) translateX(0);
+    width: 90%;
+    height: 25vh;
   }
 }

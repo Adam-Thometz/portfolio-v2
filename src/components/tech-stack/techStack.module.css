@@ -22,7 +22,7 @@
   font-family: "Space Mono";
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 600px) {
   .techStack {
     grid-template-columns: repeat(3, 7rem);
     margin: 0 auto;
