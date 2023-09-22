@@ -13,7 +13,7 @@ import useVisited from "@/utils/useVisited";
 export default function Loader() {
   const [percent, setPercent] = useState(0);
   const [visited, setVisited] = useVisited()
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLElement | null>(null);
 
   const moveUp = () => {
     if (ref.current) ref.current.style.transform = "translateY(-125vh)";
@@ -39,6 +39,7 @@ export default function Loader() {
 
   useEffect(() => disableScroll(), []);
   
+  // @ts-ignore
   return <div className={styles.loader} ref={ref} suppressHydrationWarning>
     <Image src={logo} alt="" className={styles.logo}/>
     <span className={styles.numbers}>{percent}%</span>

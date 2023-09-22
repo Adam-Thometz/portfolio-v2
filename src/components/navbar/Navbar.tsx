@@ -45,15 +45,13 @@ export default function Navbar() {
   // });
 
   const openMenu = (): void => {
-    // @ts-ignore
-    menuRef.current.animate([
+    menuRef.current?.animate([
       { transform: "translateY(-100%)" },
       { transform: "translateY(0%)" },
     ], OPTIONS);
   }
   const closeMenu = (): void => {
-    // @ts-ignore
-    menuRef.current.animate([
+    menuRef.current?.animate([
       { transform: "translateY(0%)" },
       { transform: "translateY(-100%)" },
     ], OPTIONS);
