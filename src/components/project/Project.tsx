@@ -17,7 +17,8 @@ export default function Project({
   name,
   techStack,
 }: Project) {
-  return <section className={styles.project} id={`${PROJECT}-${name.replaceAll(/ /g, '-')}`}>
+  const formattedName = name.replaceAll(/ /g, '-');
+  return <section className={styles.project} id={`${PROJECT}-${formattedName}`}>
     <SingleBlur />
     <section className={styles.projectInfo}>
       <div className={styles.projectHeader}>
