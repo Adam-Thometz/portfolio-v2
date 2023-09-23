@@ -31,7 +31,7 @@ const smallProjects: Project[] = [
   },
   {
     name: "8-Bit Clan",
-    description: "Make some 8-bit NFTs! Top 5% in the Mintbean Hiring Hackathon",
+    description: "Make some 8-bit NFTs! Top 5% in the Mintbean Hiring Hackathon, November 2021",
     techStack: getTechStack(["Node", "Express", "React", "PostgresQL"]),
     mp4: "mp4s/8-bit-clan.mp4",
     liveLink: new URL("https://8-bit-clan.surge.sh/"),
@@ -39,7 +39,7 @@ const smallProjects: Project[] = [
     fakeUrl: "clan.nft",
   },
   {
-    name: "Portfolio",
+    name: "This Portfolio",
     description: "Bob's your uncle",
     techStack: getTechStack(["NextJS", "Typescript"]),
     mp4: "mp4s/portfolio.mp4",
