@@ -9,7 +9,7 @@ export default function Playground() {
     <BigBlur />
     <header className={styles.playgroundHeader}>
       <h1>Playground</h1>
-      <p>Check out the stuff I made for fun!</p>
+      <p>You&apos;ve read the resume, now enjoy the exhibits</p>
     </header>
     <div className={styles.projects}>
       {smallProjects.map(project => (

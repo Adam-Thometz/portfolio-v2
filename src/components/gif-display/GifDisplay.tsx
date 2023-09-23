@@ -12,7 +12,6 @@ export default function GifDisplay({mp4, fakeUrl, small}: Props) {
     : fakeUrl.toString();
 
   const smallClass = small ? styles.small : '';
-  // `${styles.gifDisplay} ${smallClass}`
   return <div className={`${styles.gifDisplay} ${smallClass}`}>
     <div className={styles.fakeNav}>
       <div className={styles.threeButtons}>
