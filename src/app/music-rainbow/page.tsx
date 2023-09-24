@@ -31,7 +31,11 @@ export default function MusicRainbowProject() {
       const script: string = bodyEl.children[1].innerHTML; // My Javascript
       setJavascript(script);
     }
-    getHTML();
+    try {
+      getHTML();
+    } catch (e) {
+      console.error("Oh noes", e);
+    }
   }, []);
   
   return <main ref={appRef}>
