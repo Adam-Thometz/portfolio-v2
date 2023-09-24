@@ -74,10 +74,6 @@
 .small {
   transform: rotate(0) skew(0,0) translateX(0);
   height: 40vh;
-
-  /* &.mp4Wrapper {
-
-  } */
 }
 
 @media (max-width: 1250px) {
