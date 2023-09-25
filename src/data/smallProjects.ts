@@ -16,7 +16,7 @@ const smallProjects: Project[] = [
     description: "Making visuals based on my own music :D",
     techStack: getTechStack(["Javascript"]),
     mp4: "mp4s/acceptance-cave.mp4",
-    liveLink: new URL("https://main.d26vd7jd4udjgm.amplifyapp.com/"),
+    liveLink: "/acceptance-cave",
     githubLink: new URL("https://github.com/Adam-Thometz/Polyrhythm-Arduino"),
     fakeUrl: "acceptance.cave",
   },
