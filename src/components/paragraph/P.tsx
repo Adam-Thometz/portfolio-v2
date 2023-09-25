@@ -1,9 +1,8 @@
-import { ReactNode } from "react"
 import styles from "./p.module.css"
 
 type Props = {
   otherClass?: string,
-  children: string | ReactNode
+  children: string | React.ReactNode
 }
 
 export default function P({ otherClass = "", children }: Props) {

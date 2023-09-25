@@ -21,7 +21,7 @@ const smallProjects: Project[] = [
     fakeUrl: "acceptance.cave",
   },
   {
-    name: "Natural Language To SQL",
+    name: "English To SQL",
     description: "Convert a human query to a SQL one with AI. Live goes to Youtube demo. Take the code and try it on your data",
     techStack: getTechStack(["Python", "Pandas", "SQL"]),
     mp4: "mp4s/nl-to-sql.mp4",

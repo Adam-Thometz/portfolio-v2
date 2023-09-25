@@ -3,12 +3,11 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 import Script from "next/script";
 
-import "../styles/global.css";
+import "./global.css";
 
 import Navbar from "@/components/navbar/Navbar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-
   return (
     <html lang="en">
       <head>

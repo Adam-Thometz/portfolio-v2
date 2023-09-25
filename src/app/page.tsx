@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <AboutMe />
-        <Playground />
+        {/* <Playground /> */}
       </Suspense>
     </main>
   )
