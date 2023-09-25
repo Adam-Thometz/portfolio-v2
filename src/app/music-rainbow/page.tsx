@@ -11,7 +11,6 @@ export default function MusicRainbowProject() {
 
   async function getAppCode() {
     const text = await (await fetch(MUSIC_RAINBOW_URL)).text();
-
     const htmlToDisplay = document.createElement("html");
     htmlToDisplay.innerHTML = text;
 
