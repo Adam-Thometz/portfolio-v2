@@ -1,4 +1,4 @@
-import styles from "./gifDisplay.module.css";
+import styles from "./movDisplay.module.css";
 
 type Props = {
   mp4: string,
@@ -6,13 +6,13 @@ type Props = {
   small?: boolean
 };
 
-export default function GifDisplay({mp4, fakeUrl, small}: Props) {
+export default function MovDisplay({mp4, fakeUrl, small}: Props) {
   const urlDisplay = typeof fakeUrl === "string"
     ? fakeUrl
     : fakeUrl.toString();
 
-  const smallClass = small ? styles.small : '';
-  return <div className={`${styles.gifDisplay} ${smallClass}`}>
+  const sizeClass = small ? styles.small : styles.main;
+  return <div className={`${styles.movDisplay} ${sizeClass}`}>
     <div className={styles.fakeNav}>
       <div className={styles.threeButtons}>
         <div className={styles.smallButton}></div>

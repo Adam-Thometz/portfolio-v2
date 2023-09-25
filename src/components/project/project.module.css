@@ -32,7 +32,9 @@
 @media (max-width: 1250px) {
   .project {
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: flex-end;
+    height: unset;
+    margin-bottom: 80px;
   }
   .movWrapper {
     margin: 0 auto;

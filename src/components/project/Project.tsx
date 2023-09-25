@@ -1,7 +1,7 @@
 import styles from "./project.module.css";
 
 import SingleBlur from "../background/single-blur/SingleBlur";
-import GifDisplay from "../gif-display/GifDisplay";
+import MovDisplay from "../mov-display/MovDisplay";
 import TechStack from "../tech-stack/TechStack";
 import ButtonLink from "../button/ButtonLink";
 import H2 from "../h2/H2";
@@ -33,8 +33,8 @@ export default function Project({
         <ButtonLink url={githubLink}>Github</ButtonLink>
       </div>
     </section>
-    <aside className={styles.movWrapper}>
-      <GifDisplay mp4={mp4} fakeUrl={fakeUrl} />
-    </aside>
+    {/* <aside className={styles.movWrapper}> */}
+    <MovDisplay mp4={mp4} fakeUrl={fakeUrl} />
+    {/* </aside> */}
   </section>
 }

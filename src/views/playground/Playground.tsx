@@ -13,10 +13,10 @@ export default function Playground() {
     <BigBlur />
     <header className={styles.playgroundHeader}>
       <H1>Playground</H1>
-      <P>Under construction...</P>
-      {/* <P>You&apos;ve read the resume, now enjoy the exhibits</P> */}
+      {/* <P>Under construction...</P> */}
+      <P>You&apos;ve read the resume, now enjoy the exhibits</P>
     </header>
-    {/* <div className={styles.projects}>
+    <div className={styles.projects}>
       {smallProjects.map(project => (
         <SmallProject
           key={project.name}
@@ -29,6 +29,6 @@ export default function Playground() {
           fakeUrl={project.fakeUrl}
         />
       ))}
-    </div> */}
+    </div>
   </section>
 }
