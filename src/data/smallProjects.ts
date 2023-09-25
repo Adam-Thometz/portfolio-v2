@@ -3,6 +3,15 @@ import { Project } from "./types";
 
 const smallProjects: Project[] = [
   {
+    name: "Browser Music Video",
+    description: "Making visuals based on my own music! The song is called 'Acceptance Cave.'",
+    techStack: getTechStack(["Javascript"]),
+    mp4: "mp4s/acceptance-cave.mp4",
+    liveLink: "/acceptance-cave",
+    githubLink: new URL("https://github.com/Adam-Thometz/Polyrhythm-Arduino"),
+    fakeUrl: "acceptance.cave",
+  },
+  {
     name: "Music Rainbow",
     description: "This rainbow makes music! I also used an Arduino control pitch",
     techStack: getTechStack(["Javascript", "Node", "C++"]),
@@ -10,15 +19,6 @@ const smallProjects: Project[] = [
     liveLink: "/music-rainbow",
     githubLink: new URL("https://github.com/Adam-Thometz/Polyrhythm-Arduino"),
     fakeUrl: "music.rainbow",
-  },
-  {
-    name: "Browser Music Video",
-    description: "Making visuals based on my own music :D",
-    techStack: getTechStack(["Javascript"]),
-    mp4: "mp4s/acceptance-cave.mp4",
-    liveLink: "/acceptance-cave",
-    githubLink: new URL("https://github.com/Adam-Thometz/Polyrhythm-Arduino"),
-    fakeUrl: "acceptance.cave",
   },
   {
     name: "English To SQL",
