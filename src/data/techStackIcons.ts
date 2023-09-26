@@ -9,7 +9,6 @@ import FastAPI from "../../public/images/tech-stack-icons/fastapi.png";
 import Flask from "../../public/images/tech-stack-icons/flask.png";
 import Javascript from "../../public/images/tech-stack-icons/javascript.png";
 import Jest from "../../public/images/tech-stack-icons/jest.png";
-import jQuery from "../../public/images/tech-stack-icons/jquery.png";
 import MongoDB from "../../public/images/tech-stack-icons/mongodb.png";
 import NextJS from "../../public/images/tech-stack-icons/nextJS.png";
 import Node from "../../public/images/tech-stack-icons/nodeJS.png";
@@ -24,11 +23,11 @@ import Vue from "../../public/images/tech-stack-icons/vue.png";
 
 const techStackIcons: {[k: string]: StaticImageData} = {
   // Frontend
-  Javascript, Typescript, React, Redux, jQuery, CSS, Vue, NextJS,
+  Javascript, Typescript, React, Redux, CSS, Vue, NextJS,
   // Backend
-  Python, Flask, Django, FastAPI, Node, Express, PostgresQL, MongoDB,
+  Python, Flask, Django, FastAPI, Node, Express,
   // Other
-  Jest, AWS, "C++": C_PP, Pandas, SQL
+  Jest, AWS, "C++": C_PP, Pandas, SQL, PostgresQL, MongoDB,
 }
 
 export default techStackIcons;
