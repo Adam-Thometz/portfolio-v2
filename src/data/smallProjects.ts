@@ -1,7 +1,7 @@
 import getTechStack from "@/utils/getTechStack";
-import { Project } from "./types";
+import { PlaygroundProject } from "./types";
 
-const smallProjects: Project[] = [
+const smallProjects: PlaygroundProject[] = [
   {
     name: "Browser Music Video",
     description: "Making visuals based on my own music! The song is called 'Acceptance Cave.'",
@@ -37,15 +37,6 @@ const smallProjects: Project[] = [
     liveLink: new URL("https://8-bit-clan.surge.sh/"),
     githubLink: new URL("https://github.com/Adam-Thometz/8-Bit-Clan"),
     fakeUrl: "clan.nft",
-  },
-  {
-    name: "This Portfolio",
-    description: "Bob's your uncle",
-    techStack: getTechStack(["NextJS", "Typescript"]),
-    mp4: "mp4s/portfolio.mp4",
-    liveLink: new URL("https://www.adamthometz.com/"),
-    githubLink: new URL("https://github.com/Adam-Thometz/portfolio-v2"),
-    fakeUrl: "adam.thometz",
   },
 ];
 

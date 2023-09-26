@@ -7,18 +7,17 @@ import ButtonLink from "../button/ButtonLink";
 import H2 from "../h2/H2";
 import P from "../paragraph/P";
 
-import { Project } from "@/data/types";
 import { PROJECT } from "@/data/constants";
+import { MainProject } from "@/data/types";
 
 export default function Project({
   description,
   fakeUrl,
   mp4,
-  githubLink,
   liveLink,
   name,
   techStack,
-}: Project) {
+}: MainProject) {
   const formattedName = name.replaceAll(/ /g, '-');
   return <section className={styles.project} id={`${PROJECT}-${formattedName}`}>
     <SingleBlur />
@@ -28,13 +27,8 @@ export default function Project({
         <P>{description}</P>
       </div>
       <TechStack tech={techStack} />
-      <div className={styles.buttonWrapper}>
-        <ButtonLink url={liveLink} isPrimary>View Live</ButtonLink>
-        <ButtonLink url={githubLink}>Github</ButtonLink>
-      </div>
+      <ButtonLink url={liveLink} isPrimary long>View Site</ButtonLink>
     </section>
-    {/* <aside className={styles.movWrapper}> */}
     <MovDisplay mp4={mp4} fakeUrl={fakeUrl} />
-    {/* </aside> */}
   </section>
 }
