@@ -7,13 +7,24 @@ import P from "@/components/paragraph/P";
 
 import smallProjects from "@/data/smallProjects";
 import { PLAYGROUND } from "@/data/constants";
+import Link from "next/link";
 
 export default function Playground() {
+  const Chrome_Music_Lab = (
+    <Link
+      href="https://musiclab.chromeexperiments.com/"
+      style={{ color: "var(--text)" }}
+      target="_blank"
+    >
+      Chrome Music Lab
+    </Link>
+  );
+  
   return <section className={styles.playground} id={PLAYGROUND}>
     <BigBlur />
     <header className={styles.playgroundHeader}>
       <H1>Playground</H1>
-      <P>You&apos;ve read the resume, now focus on the fun stuff!</P>
+      <P>You&apos;ve read the resume, now focus on the fun stuff! My inspiration is Google&apos;s {Chrome_Music_Lab}.</P>
     </header>
     <div className={styles.projects}>
       {smallProjects.map(project => (
