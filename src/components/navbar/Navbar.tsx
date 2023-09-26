@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -26,23 +26,29 @@ export default function Navbar() {
   const menuRef = useRef<HTMLElement>(null);
   const router: AppRouterInstance = useRouter();
   const pathname = usePathname();
-  // const navRef = useRef<HTMLElement>(null);
-  // const [scrollY, setScrollY] = useState(0)
 
-  // window.addEventListener("scroll", () => {
-  //   if (navRef.current) {
-  //     if (scrollY < window.scrollY) {
-  //       // @ts-ignore
-  //       console.log({...navRef.current})
-  //       navRef.current.style.transform = "translateY(-10vh)"
-  //     } else {
-  //       // @ts-ignore
-  //       console.log({...navRef.current})
-  //       navRef.current.style.transform = "translateY(0)"
-  //     }
-  //     setScrollY(window.scrollY);
-  //   }
-  // });
+  useEffect(function addIntersectionObserver(): void {
+    function onIntersection(entries: IntersectionObserverEntry[]){
+      entries.forEach(entry => {
+        const id: string = entry.target.id;
+        const el = document.querySelector(`[data-id=${entry.target.id}]`) as Element;
+        const classToChange = id == HEADER
+          ? styles.highlightedLogo
+          : styles.highlighted;
+        entry.isIntersecting
+          ? el.classList.add(classToChange)
+          : el.classList.remove(classToChange);
+      });
+    }
+    
+    const observer = new IntersectionObserver(onIntersection, {
+      rootMargin: '-50px 0px -85%'
+    });
+    const ids: string[] = [HEADER, PROJECTS, ABOUT_ME, PLAYGROUND];
+    ids.forEach(function attachElToObserver(id) {
+      observer.observe(document.getElementById(id) as Element);
+    })
+  }, []);
 
   const openMenu = (): void => {
     menuRef.current?.animate([
