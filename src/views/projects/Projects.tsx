@@ -18,7 +18,6 @@ export default function Projects() {
         techStack={project.techStack}
         mp4={project.mp4}
         liveLink={project.liveLink}
-        githubLink={project.githubLink}
         fakeUrl={project.fakeUrl}
       />
     ))}
