@@ -41,13 +41,15 @@ export default function Navbar() {
       });
     }
     
-    const observer = new IntersectionObserver(onIntersection, {
-      rootMargin: '-50px 0px -85%'
-    });
-    const ids: string[] = [HEADER, PROJECTS, ABOUT_ME, PLAYGROUND];
-    ids.forEach(function attachElToObserver(id) {
-      observer.observe(document.getElementById(id) as Element);
-    })
+    if (document.location.pathname == "/") {
+      const observer = new IntersectionObserver(onIntersection, {
+        rootMargin: '-50px 0px -85%'
+      });
+      const ids: string[] = [HEADER, PROJECTS, ABOUT_ME, PLAYGROUND];
+      ids.forEach(function attachElToObserver(id) {
+        observer.observe(document.getElementById(id) as Element);
+      })
+    }
   }, []);
 
   const openMenu = (): void => {
