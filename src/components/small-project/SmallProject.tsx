@@ -7,7 +7,15 @@ import MovDisplay from "../mov-display/MovDisplay";
 import H2 from "../h2/H2";
 import P from "../paragraph/P";
 
-export default function SmallProject({name, description, techStack, mp4, liveLink, githubLink, fakeUrl}: PlaygroundProject) {
+export default function SmallProject({
+  name,
+  description,
+  techStack,
+  mp4,
+  liveLink,
+  githubLink,
+  fakeUrl
+}: PlaygroundProject) {
   return <div className={styles.smallProject}>
     <MovDisplay mp4={mp4} fakeUrl={fakeUrl} small />
     <H2>{name}</H2>
