@@ -12,10 +12,10 @@ const projects: MainProject[] = [
   },
   {
     name: "AI Assistant @ TARA",
-    description: "GPT-powered tools that help teachers create goals, quizzes, and tasks. Live goes to TARA website.",
+    description: "GPT-powered tools that help teachers create goals, quizzes, and tasks. Live goes to login for TARA website.",
     techStack: getTechStack(["Vue", "Django", "AWS", "Node"]),
     mp4: "mp4s/ai-assistant.mp4",
-    liveLink: new URL("https://youtu.be/Hsfz6F5kQiI"),
+    liveLink: new URL("https://www.tarateachers.com/"),
     fakeUrl: "tara.teachers"
   },
   {
