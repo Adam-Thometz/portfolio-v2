@@ -27,9 +27,11 @@ export default function AboutMe() {
     <section className={styles.textWrapper}>
       <H1>About Me</H1>
       <article>
-        <P otherClass={styles.text}>Before software, I was a teacher in NYC public schools, mostly teaching music to autistic kids. I started learning to code in 2020 and a year later, I was building apps for my classes (see <Link href={`#${PROJECT}-Art-Buddy`} className={styles.textLink}>Art Buddy</Link>).</P>
+        <P otherClass={styles.text}>Before software, I was a teacher in NYC public schools, mostly teaching music to autistic children. I started learning to code in 2020 and a year later, I was building apps for my music classes (see <Link href={`#${PROJECT}-Art-Buddy`} className={styles.textLink}>Art Buddy</Link>).</P>
         <br />
-        <P otherClass={styles.text}>When I&apos;m not coding, I create electronic prog rock as Tesla&apos;s Ghost. I also enjoy cooking, meditating, kung fu, and learning Spanish and Arabic. I live in the Bronx with my fiancee, my cat, and my blue tongue skink. I am also neurodivergent.</P>
+        <P otherClass={styles.text}>When I&apos;m not coding, I create electronic prog rock as Tesla&apos;s Ghost. I also enjoy cooking, meditating, and working out.</P>
+        <br />
+        <P>I live in NYC with my fiancee, my cat, and my lizard.</P>
       </article>
       <div className={styles.linkWrapper}>
         {links.map(link => (
