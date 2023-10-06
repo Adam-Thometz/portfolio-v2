@@ -18,7 +18,7 @@ export type PlaygroundProject = {
   name: string,
   description: string,
   techStack: TechStack[],
-  liveLink: URL | string,
+  liveLink?: URL | string,
   githubLink: URL,
   fakeUrl: string,
   mp4: string,

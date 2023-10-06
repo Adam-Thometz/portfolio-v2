@@ -4,7 +4,7 @@ import { PlaygroundProject } from "./types";
 const smallProjects: PlaygroundProject[] = [
   {
     name: "Browser Music Video",
-    description: "Making visuals based on my own music! The song is called 'Acceptance Cave.'",
+    description: "Making visuals based on my own music! You can also be a DJ and mute some tracks",
     techStack: getTechStack(["Javascript"]),
     mp4: "mp4s/acceptance-cave.mp4",
     liveLink: "/acceptance-cave",
@@ -13,7 +13,7 @@ const smallProjects: PlaygroundProject[] = [
   },
   {
     name: "Music Rainbow",
-    description: "This rainbow makes music! I also used an Arduino control pitch",
+    description: "This rainbow makes music! I also experimented with using an Arduino control pitch",
     techStack: getTechStack(["Javascript", "Node", "C++"]),
     mp4: "mp4s/music-rainbow.mp4",
     liveLink: "/music-rainbow",
@@ -22,10 +22,9 @@ const smallProjects: PlaygroundProject[] = [
   },
   {
     name: "English To SQL",
-    description: "Convert a human query to a SQL one with AI. Live goes to Youtube demo. Take the code and try it on your data",
+    description: "Convert a human query to a SQL one with AI. Take the code and try it on your data",
     techStack: getTechStack(["Python", "Pandas", "SQL"]),
     mp4: "mp4s/nl-to-sql.mp4",
-    liveLink: new URL("https://www.youtube.com/watch?v=Z-5s4YT52Cg"),
     githubLink: new URL("https://github.com/Adam-Thometz/Natural-Language-to-SQL"),
     fakeUrl: "human.sql",
   },
@@ -38,6 +37,22 @@ const smallProjects: PlaygroundProject[] = [
     githubLink: new URL("https://github.com/Adam-Thometz/8-Bit-Clan"),
     fakeUrl: "clan.nft",
   },
+  // {
+  //   name: "Reptifeed",
+  //   description: "My final capstone project from bootcamp. Featuring an API that gets you data about lizard diets.",
+  //   techStack: getTechStack(["Node", "Express", "React", "PostgresQL"]),
+  //   mp4: "mp4s/8-bit-clan.mp4",
+  //   githubLink: new URL("https://github.com/Adam-Thometz/Reptifeed"),
+  //   fakeUrl: "reptile.feed",
+  // },
+  // {
+  //   name: "Musophile",
+  //   description: "My 1st capstone project from bootcamp. Curate your music and share with other users. Uses the Spotify API.",
+  //   techStack: getTechStack(["Flask", "PostgresQL", "jQuery", "CSS"]),
+  //   mp4: "mp4s/8-bit-clan.mp4",
+  //   githubLink: new URL("https://github.com/Adam-Thometz/Reptifeed"),
+  //   fakeUrl: "music.time",
+  // },
 ];
 
 export default smallProjects;

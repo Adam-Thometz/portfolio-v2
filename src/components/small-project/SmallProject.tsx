@@ -22,7 +22,7 @@ export default function SmallProject({
     <P>{description}</P>
     <TechStack tech={techStack} />
     <div className={styles.buttonWrapper}>
-      <ButtonLink url={liveLink} isPrimary>View</ButtonLink>
+      {liveLink ? <ButtonLink url={liveLink} isPrimary>View</ButtonLink> : null}
       <ButtonLink url={githubLink}>Code</ButtonLink>
     </div>
   </div>
