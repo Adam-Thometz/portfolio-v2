@@ -8,6 +8,7 @@ import Docker from "../../public/images/tech-stack-icons/docker.png";
 import Express from "../../public/images/tech-stack-icons/expressJS.png";
 import FastAPI from "../../public/images/tech-stack-icons/fastapi.png";
 import Flask from "../../public/images/tech-stack-icons/flask.png";
+import Java from "../../public/images/tech-stack-icons/java.png";
 import Javascript from "../../public/images/tech-stack-icons/javascript.png";
 import Jest from "../../public/images/tech-stack-icons/jest.png";
 import jQuery from "../../public/images/tech-stack-icons/jquery.png";
@@ -27,7 +28,7 @@ const techStackIcons: {[k: string]: StaticImageData} = {
   // Frontend
   Javascript, Typescript, React, Redux, CSS, Vue, NextJS, jQuery,
   // Backend
-  Python, Flask, Django, FastAPI, Node, Express,
+  Python, Flask, Django, FastAPI, Node, Express, Java,
   // Other
   Jest, AWS, "C++": C_PP, Pandas, SQL, PostgresQL, MongoDB, Docker
 }
