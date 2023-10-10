@@ -14,7 +14,7 @@ import logo from "../../../public/images/logo.svg";
 import hamburger from "../../../public/images/hamburger.svg";
 import close from "../../../public/images/close.svg";
 
-import { HEADER, ABOUT_ME, RESUME_LINK, PROJECTS, PLAYGROUND } from '../../data/constants';
+import { HEADER, PROJECTS, ABOUT_ME, PLAYGROUND, RESUME_LINK } from '../../data/constants';
 
 const OPTIONS: KeyframeAnimationOptions = {
   duration: 600,
@@ -22,22 +22,28 @@ const OPTIONS: KeyframeAnimationOptions = {
   easing: "ease-in-out"
 }
 
+const IDS: string[] = [HEADER, PROJECTS, ABOUT_ME, PLAYGROUND];
+
 export default function Navbar() {
   const menuRef = useRef<HTMLElement>(null);
   const router: AppRouterInstance = useRouter();
   const pathname = usePathname();
 
+  const changeClass = (id: string, el: HTMLElement, isIntersecting: boolean): void => {
+    const classToChange = id == HEADER
+      ? styles.highlightedLogo
+      : styles.highlighted;
+    isIntersecting
+      ? el.classList.add(classToChange)
+      : el.classList.remove(classToChange);
+  }
+
   useEffect(function addIntersectionObserver(): void {
     function onIntersection(entries: IntersectionObserverEntry[]){
       entries.forEach(entry => {
         const id: string = entry.target.id;
-        const el = document.querySelector(`[data-id=${entry.target.id}]`) as Element;
-        const classToChange = id == HEADER
-          ? styles.highlightedLogo
-          : styles.highlighted;
-        entry.isIntersecting
-          ? el.classList.add(classToChange)
-          : el.classList.remove(classToChange);
+        const el: HTMLElement = document.querySelector(`[data-id=${entry.target.id}]`) as HTMLElement;
+        changeClass(id, el, entry.isIntersecting);
       });
     }
     
@@ -45,10 +51,9 @@ export default function Navbar() {
       const observer = new IntersectionObserver(onIntersection, {
         rootMargin: '-50px 0px -85%'
       });
-      const ids: string[] = [HEADER, PROJECTS, ABOUT_ME, PLAYGROUND];
-      ids.forEach(function attachElToObserver(id) {
+      IDS.forEach(function attachElToObserver(id) {
         observer.observe(document.getElementById(id) as Element);
-      })
+      });
     }
   }, []);
 
