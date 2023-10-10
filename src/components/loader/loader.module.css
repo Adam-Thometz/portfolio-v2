@@ -23,7 +23,7 @@
   bottom: 35vh;
   left: 10%;
   color: var(--accentGreen);
-  font-family: "Space Mono";
+  font-family: "Space Mono", monospace;
 }
 
 @media (max-width: 500px) {
