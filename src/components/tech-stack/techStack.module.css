@@ -19,7 +19,7 @@
 }
 
 .caption {
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono";
 }
 
 @media (max-width: 600px) {

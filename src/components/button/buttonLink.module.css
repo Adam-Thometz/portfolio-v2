@@ -6,7 +6,7 @@
   margin-right: 0.75rem;
   border: 1px solid var(--accentGreen);
   box-shadow: 0px 5px 30px 0px rgba(76, 32, 36, 0.05);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
   font-weight: 700;
   z-index: 1;
 }
