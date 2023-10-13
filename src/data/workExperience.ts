@@ -29,15 +29,6 @@ const projects: WorkExperience[] = [
     liveLink: new URL("https://art-buddy.surge.sh/"),
     fakeUrl: "art.buddy"
   },
-  {
-    name: "8billionminds - Frontend",
-    description: "Like couch-surfing but for live learning. I volunteer on this project from time to time.",
-    techStack: getTechStack(["Javascript", "CSS", "Java"]),
-    mp4: "mp4s/8bm.mp4",
-    fallback: "mp4s/fallback/8bm.png",
-    liveLink: new URL("https://8billionminds.com/"),
-    fakeUrl: "8bm.live"
-  },
 ];
 
 export default projects;
