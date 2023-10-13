@@ -5,7 +5,7 @@ const projects: WorkExperience[] = [
   {
     name: "TARA - AI Assistant",
     description: "GPT-powered tools to help teachers create goals, quizzes, and tasks while saving hours of planning time.",
-    techStack: getTechStack(["Vue", "Django", "AWS", "Node", "PostgresQL", "Docker"]),
+    techStack: getTechStack(["Vue", "Django", "AWS", "Node"]),
     mp4: "mp4s/ai-assistant.mp4",
     fallback: "mp4s/fallback/ai-assistant.mp4",
     liveLink: new URL("https://www.tarateachers.com/"),
