@@ -21,12 +21,12 @@ const projects: WorkExperience[] = [
     fakeUrl: "8bm.live"
   },
   {
-    name: "Vesta Healing - Frontend",
+    name: "Clarity - Frontend",
     description: "A website to advertise the services of a local psychotherapist.",
     techStack: getTechStack(["React", "CSS", "AWS"]),
     mp4: "mp4s/vesta.mp4",
     fallback: "mp4s/fallback/vesta.mp4",
-    liveLink: new URL("https://www.vestahealingnyc.org/"),
+    liveLink: new URL("https://www.claritypsychotherapycounseling.com/"),
     fakeUrl: "vesta.healing"
   },
   {
