@@ -1,18 +1,19 @@
 import { Suspense } from "react";
 
+import BrokenMobile from "@/components/broken-mobile/BrokenMobile";
 import Loader from "@/components/loader/Loader";
 import Hero from "@/views/hero/Hero";
-import Projects from "@/views/projects/Projects";
+import Work from "@/views/work/Work";
 import AboutMe from "@/views/about-me/AboutMe";
 import Playground from "@/views/playground/Playground";
 
 export default function Home() {
   return (
     <main id='app'>
-      <Suspense>
+      <Suspense fallback={"Loading..."}>
         <Loader />
         <Hero />
-        <Projects />
+        <Work />
         <AboutMe />
         <Playground />
       </Suspense>

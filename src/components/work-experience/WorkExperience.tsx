@@ -1,4 +1,4 @@
-import styles from "./project.module.css";
+import styles from "./workExperience.module.css";
 
 import SingleBlur from "../background/single-blur/SingleBlur";
 import MovDisplay from "../mov-display/MovDisplay";
@@ -7,28 +7,29 @@ import ButtonLink from "../button/ButtonLink";
 import H2 from "../h2/H2";
 import P from "../paragraph/P";
 
-import { PROJECT } from "@/data/constants";
-import { MainProject } from "@/data/types";
+import { EXPERIENCE } from "@/data/constants";
+import { WorkExperience } from "@/data/types";
 
-export default function Project({
+export default function Experience({
   description,
   fakeUrl,
   mp4,
+  fallback,
   liveLink,
   name,
   techStack,
-}: MainProject) {
+}: WorkExperience) {
   const formattedName = name.replaceAll(/ /g, '-');
-  return <section className={styles.project} id={`${PROJECT}-${formattedName}`}>
+  return <section className={styles.experience} id={`${EXPERIENCE}-${formattedName}`}>
     <SingleBlur />
-    <section className={styles.projectInfo}>
-      <div className={styles.projectHeader}>
+    <section className={styles.experienceInfo}>
+      <div className={styles.experienceHeader}>
         <H2>{name}</H2>
         <P>{description}</P>
       </div>
       <TechStack tech={techStack} />
       <ButtonLink url={liveLink} isPrimary long>View Site</ButtonLink>
     </section>
-    <MovDisplay mp4={mp4} fakeUrl={fakeUrl} />
+    <MovDisplay mp4={mp4} fallback={fallback} fakeUrl={fakeUrl} />
   </section>
 }

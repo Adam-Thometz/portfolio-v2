@@ -10,7 +10,7 @@ import P from "@/components/paragraph/P";
 
 import me from "../../../public/images/me.webp";
 
-import { HEADER, PROJECTS } from "@/data/constants";
+import { HEADER, WORK } from "@/data/constants";
 
 export default function Hero() {
   return <header className={styles.hero} id={HEADER}>
@@ -19,8 +19,8 @@ export default function Hero() {
     <section className={styles.header}>
       <Image src={me} alt='The developer' className={styles.image} />
       <H1>Hello! My name is Adam</H1>
-      <P otherClass={styles.text}>NYC-based software engineer, specializing in frontend work. Experienced in edtech, AI, and music</P>
-      <Arrow id={PROJECTS} />
+      <P otherClass={styles.text}>NYC-based software engineer, specializing in frontend work. Experienced in and passionate about edtech</P>
+      <Arrow id={WORK} />
     </section>
   </header>
 }

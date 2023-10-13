@@ -12,12 +12,13 @@ export default function SmallProject({
   description,
   techStack,
   mp4,
+  fallback,
   liveLink,
   githubLink,
-  fakeUrl
+  fakeUrl,
 }: PlaygroundProject) {
   return <div className={styles.smallProject}>
-    <MovDisplay mp4={mp4} fakeUrl={fakeUrl} small />
+    <MovDisplay mp4={mp4} fallback={fallback} fakeUrl={fakeUrl} small />
     <H2>{name}</H2>
     <P>{description}</P>
     <TechStack tech={techStack} />

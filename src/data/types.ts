@@ -5,13 +5,14 @@ export type TechStack = {
   icon: StaticImageData
 };
 
-export type MainProject = {
+export type WorkExperience = {
   name: string,
   description: string,
   techStack: TechStack[],
   liveLink: URL | string,
   fakeUrl: string,
   mp4: string,
+  fallback: string,
 };
 
 export type PlaygroundProject = {
@@ -22,6 +23,7 @@ export type PlaygroundProject = {
   githubLink: URL,
   fakeUrl: string,
   mp4: string,
+  fallback: string,
 };
 
 export type LinkInfo = {

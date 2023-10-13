@@ -14,7 +14,7 @@ import logo from "../../../public/images/logo.svg";
 import hamburger from "../../../public/images/hamburger.svg";
 import close from "../../../public/images/close.svg";
 
-import { HEADER, PROJECTS, ABOUT_ME, PLAYGROUND, RESUME_LINK } from '../../data/constants';
+import { HEADER, WORK, ABOUT_ME, PLAYGROUND, RESUME_LINK } from '../../data/constants';
 
 const OPTIONS: KeyframeAnimationOptions = {
   duration: 600,
@@ -22,7 +22,7 @@ const OPTIONS: KeyframeAnimationOptions = {
   easing: "ease-in-out"
 }
 
-const IDS: string[] = [HEADER, PROJECTS, ABOUT_ME, PLAYGROUND];
+const IDS: string[] = [HEADER, WORK, ABOUT_ME, PLAYGROUND];
 
 export default function Navbar() {
   const menuRef = useRef<HTMLElement>(null);
@@ -52,7 +52,7 @@ export default function Navbar() {
         rootMargin: '-50px 0px -85%'
       });
       IDS.forEach(function attachElToObserver(id) {
-        observer.observe(document.getElementById(id) as Element);
+        observer.observe(document.getElementById(id) as HTMLElement);
       });
     }
   }, []);
@@ -90,11 +90,11 @@ export default function Navbar() {
       <Image src={close} alt="close" className={styles.close} onClick={closeMenu} />
       {pathname == "/" ? <>
         <Link
-          href={`/#${PROJECTS}`}
-          data-id={PROJECTS}
+          href={`/#${WORK}`}
+          data-id={WORK}
           className={styles.navButton}
         >
-          Projects
+          Experience
         </Link>
         <Link
           href={`/#${ABOUT_ME}`}

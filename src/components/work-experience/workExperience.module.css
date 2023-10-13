@@ -1,4 +1,4 @@
-.project {
+.experience {
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-.projectHeader {
+.experienceHeader {
   width: 70%;
 }
 
-.projectInfo {
+.experienceInfo {
   height: 60%;
   width: 64%;
   display: flex;
@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 1250px) {
-  .project {
+  .experience {
     flex-direction: column-reverse;
     justify-content: flex-end;
     height: unset;
@@ -39,16 +39,16 @@
   .movWrapper {
     margin: 0 auto;
   }
-  .projectInfo {
+  .experienceInfo {
     width: 90%;
     height: 50%;
     margin: 0 auto;
     align-items: center;
   }
-  .projectHeader {
+  .experienceHeader {
     width: 95%;
   }
-  .projectHeader > * {
+  .experienceHeader > * {
     line-height: 2rem;
   }
 }

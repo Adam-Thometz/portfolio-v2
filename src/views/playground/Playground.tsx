@@ -25,6 +25,7 @@ export default function Playground() {
           liveLink={project.liveLink}
           githubLink={project.githubLink}
           mp4={project.mp4}
+          fallback={project.fallback}
           fakeUrl={project.fakeUrl}
         />
       ))}

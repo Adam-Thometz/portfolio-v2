@@ -1,15 +1,22 @@
 import styles from "./movDisplay.module.css";
 
+import Image from "next/image";
+
 type Props = {
   mp4: string,
+  fallback: string,
   fakeUrl: string | URL,
   small?: boolean
 };
 
-export default function MovDisplay({mp4, fakeUrl, small}: Props) {
+export default function MovDisplay({mp4, fallback, fakeUrl, small}: Props) {
   const urlDisplay = typeof fakeUrl === "string"
     ? fakeUrl
     : fakeUrl.toString();
+
+  // @ts-ignore
+  // const display = window.isMobile()
+  //   ? 
 
   const sizeClass = small ? styles.small : styles.main;
   return <div className={`${styles.movDisplay} ${sizeClass}`}>
@@ -22,7 +29,7 @@ export default function MovDisplay({mp4, fakeUrl, small}: Props) {
       <div className={styles.addressBar}>{urlDisplay}</div>
     </div>
     <div className={styles.mp4Wrapper}>
-      <video src={mp4} className={styles.mp4} autoPlay loop muted />
+      <video src={mp4} poster={fallback} className={styles.mp4} autoPlay loop muted />
     </div>
   </div>
 }

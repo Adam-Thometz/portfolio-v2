@@ -1,0 +1,23 @@
+.brokenMobile {
+  width: 90%;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkWrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.link > img > path {
+  transition: fill .9s;
+}
+
+.link:hover > img > path {
+  fill: #0FC;
+}
