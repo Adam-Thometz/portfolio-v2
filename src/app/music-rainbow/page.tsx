@@ -31,11 +31,7 @@ export default function MusicRainbowProject() {
   }
 
   useEffect(() => {
-    try {
-      getAppCode();
-    } catch (e) {
-      console.error("Oh noes", e);
-    }
+    getAppCode();
   }, []);
   
   return <main ref={appRef}>
