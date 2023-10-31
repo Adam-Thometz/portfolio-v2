@@ -19,7 +19,7 @@ export default function Hero() {
     <section className={styles.header}>
       <Image src={me} alt='The developer' className={styles.image} />
       <H1>Hello! My name is Adam</H1>
-      <P otherClass={styles.text}>NYC-based software engineer, specializing in frontend work and AI</P>
+      <P otherClass={styles.text}>NYC-based software engineer, specializing in frontend and AI</P>
       <Arrow id={WORK} />
     </section>
   </header>
