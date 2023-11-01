@@ -29,9 +29,9 @@ export default function AboutMe() {
       <article>
         <P otherClass={styles.text}>Before software, I was a teacher in NYC public schools, mostly teaching music to autistic children. I started learning to code in 2019 and two years later, I was building apps for my music classes (see <Link href={`#${EXPERIENCE}-Art-Buddy`} className={styles.textLink}>Art Buddy</Link>).</P>
         <br />
-        <P otherClass={styles.text}>When I&apos;m not coding, I create electronic prog rock as Tesla&apos;s Ghost. I also enjoy cooking, meditating, and working out.</P>
+        <P otherClass={styles.text}>When I&apos;m not coding, I create electronic prog rock as Tesla&apos;s Ghost. I also enjoy cooking, meditating, literature, and working out.</P>
         <br />
-        <P>I live in NYC with my fiancee, my cat, and my lizard.</P>
+        <P>I live in NYC with my wife, my cat Milo, and my lizard Unity.</P>
       </article>
       <div className={styles.linkWrapper}>
         {links.map(link => (

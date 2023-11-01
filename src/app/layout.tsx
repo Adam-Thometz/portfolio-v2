@@ -40,14 +40,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}
       </Script>
       <body>
+        {/* <Navbar />
+        <ParallaxProvider>
+          {children}
+        </ParallaxProvider> */}
         {isMobile
           ? <BrokenMobile />
           : <>
-          <Navbar />
-          <ParallaxProvider>
-            {children}
-          </ParallaxProvider>
-        </>}
+            <Navbar />
+            <ParallaxProvider>
+              {children}
+            </ParallaxProvider>
+          </>
+        }
       </body>
     </html>
   )
