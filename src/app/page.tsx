@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 
-import BrokenMobile from "@/components/broken-mobile/BrokenMobile";
 import Loader from "@/components/loader/Loader";
 import Hero from "@/views/hero/Hero";
 import Work from "@/views/work/Work";
 import AboutMe from "@/views/about-me/AboutMe";
 import Playground from "@/views/playground/Playground";
+import Footer from "@/views/footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
         <Work />
         <AboutMe />
         <Playground />
+        <Footer />
       </Suspense>
     </main>
   )
