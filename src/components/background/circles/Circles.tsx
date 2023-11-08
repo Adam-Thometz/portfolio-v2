@@ -18,6 +18,6 @@ export default function Circles() {
   // @ts-ignore
   return <div className={styles.circleContainer} ref={target}>
     {/* @ts-ignore */}
-    <Image src={circlesImg} alt="" className={styles.circles} ref={circles.ref}/>
+    <Image priority src={circlesImg} alt="" className={styles.circles} ref={circles.ref}/>
   </div>
 }
