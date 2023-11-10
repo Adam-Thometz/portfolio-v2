@@ -16,9 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   
   // @ts-ignore
   useEffect(() => {
-    console.log("about to check for mobile")
     // @ts-ignore
-    setIsMobile(checkMobile(navigator.userAgent||navigator.vendor||window.opera))
+    window.isMobile = checkMobile(navigator.userAgent||navigator.vendor||window.opera)
   }, [])
 
   return (
@@ -40,11 +39,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}
       </Script>
       <body>
-        {/* <Navbar />
+        <Navbar />
         <ParallaxProvider>
           {children}
-        </ParallaxProvider> */}
-        {isMobile
+        </ParallaxProvider>
+        {/* {isMobile
           ? <BrokenMobile />
           : <>
             <Navbar />
@@ -52,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {children}
             </ParallaxProvider>
           </>
-        }
+        } */}
       </body>
     </html>
   )
