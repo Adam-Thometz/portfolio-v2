@@ -1,4 +1,5 @@
-import { Suspense } from "react";
+"use client";
+import { Suspense, useState, useEffect } from "react";
 
 import Loader from "@/components/loader/Loader";
 import Hero from "@/views/hero/Hero";
@@ -7,15 +8,24 @@ import AboutMe from "@/views/about-me/AboutMe";
 import Playground from "@/views/playground/Playground";
 import Footer from "@/views/footer/Footer";
 
+import checkMobile from "@/utils/isMobile";
+
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    // @ts-ignore
+    setIsMobile(checkMobile(navigator.userAgent||navigator.vendor||window.opera))
+  }, [])
+
   return (
     <main id='app'>
       <Suspense fallback={"Loading..."}>
         <Loader />
-        <Hero />
-        <Work />
-        <AboutMe />
-        <Playground />
+        <Hero isMobile={isMobile} />
+        <Work isMobile={isMobile} />
+        <AboutMe isMobile={isMobile} />
+        <Playground isMobile={isMobile} />
         <Footer />
       </Suspense>
     </main>

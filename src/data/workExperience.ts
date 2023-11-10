@@ -25,7 +25,7 @@ const projects: WorkExperience[] = [
     description: "A website to advertise the services of a local psychotherapist.",
     techStack: getTechStack(["React", "CSS", "AWS"]),
     mp4: "mp4s/clarity.mp4",
-    fallback: "images/fallbacks/vesta.webp",
+    fallback: "images/fallbacks/clarity.webp",
     liveLink: new URL("https://www.claritypsychotherapycounseling.com/"),
     fakeUrl: "clarity.healing"
   },

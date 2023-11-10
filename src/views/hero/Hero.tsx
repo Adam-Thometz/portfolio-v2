@@ -12,10 +12,19 @@ import me from "../../../public/images/me.webp";
 
 import { HEADER, WORK } from "@/data/constants";
 
-export default function Hero() {
+type Props = {
+  isMobile: boolean
+}
+
+export default function Hero({ isMobile }: Props) {
   return <header className={styles.hero} id={HEADER}>
-    <Blurs />
-    <Circles />
+    {isMobile
+      ? null
+      : <>
+        <Blurs />
+        <Circles />
+      </>
+    }
     <section className={styles.header}>
       <Image src={me} alt='The developer' className={styles.image} />
       <H1>Hello! My name is Adam</H1>

@@ -1,17 +1,21 @@
 import styles from "./work.module.css";
 
-import Project from "@/components/work-experience/WorkExperience";
+import WorkExperience from "@/components/work-experience/WorkExperience";
 import SingleBlur from "@/components/background/single-blur/SingleBlur";
 
 import projects from "@/data/workExperience";
 import { WORK } from "@/data/constants";
 
-export default function Work() {
+type Props = {
+  isMobile: boolean
+}
+
+export default function Work({ isMobile }: Props) {
   return <section id={WORK}>
-    <SingleBlur />
+    {isMobile ? null : <SingleBlur />}
     <div className={styles.workWrapper}>
     {projects.map((project, i) => (
-      <Project
+      <WorkExperience
         key={`project-${i}`}
         name={project.name}
         description={project.description}

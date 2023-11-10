@@ -13,10 +13,14 @@ import me from "../../../public/images/me2.webp";
 import links from "@/data/contactLinks";
 import { ABOUT_ME, EXPERIENCE } from "@/data/constants";
 
-export default function AboutMe() {
+type Props = {
+  isMobile: boolean
+}
+
+export default function AboutMe({ isMobile }: Props) {
   return <section className={styles.aboutMe} id={ABOUT_ME}>
     <Waves />
-    <Blurs noOverflow />
+    {isMobile ? null : <Blurs noOverflow />}
     <aside className={styles.imageWrapper}>
       <Image
         className={styles.image}

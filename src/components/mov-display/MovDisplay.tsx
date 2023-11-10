@@ -1,7 +1,5 @@
 import styles from "./movDisplay.module.css";
 
-import Image from "next/image";
-
 type Props = {
   mp4: string,
   fallback: string,
@@ -13,12 +11,8 @@ export default function MovDisplay({mp4, fallback, fakeUrl, small}: Props) {
   const urlDisplay = typeof fakeUrl === "string"
     ? fakeUrl
     : fakeUrl.toString();
-
-  // @ts-ignore
-  // const display = window.isMobile()
-  //   ? 
-
   const sizeClass = small ? styles.small : styles.main;
+
   return <div className={`${styles.movDisplay} ${sizeClass}`}>
     <div className={styles.fakeNav}>
       <div className={styles.threeButtons}>

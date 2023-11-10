@@ -1,25 +1,13 @@
 "use client";
 import { ParallaxProvider } from "react-scroll-parallax";
-import { useEffect, useState } from "react";
 
 import Script from "next/script";
 
 import "./global.css";
 
 import Navbar from "@/components/navbar/Navbar";
-import BrokenMobile from "@/components/broken-mobile/BrokenMobile";
-
-import checkMobile from "@/utils/isMobile";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const [isMobile, setIsMobile] = useState(false)
-  
-  // @ts-ignore
-  useEffect(() => {
-    // @ts-ignore
-    window.isMobile = checkMobile(navigator.userAgent||navigator.vendor||window.opera)
-  }, [])
-
   return (
     <html lang="en">
       <head>
@@ -43,15 +31,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ParallaxProvider>
           {children}
         </ParallaxProvider>
-        {/* {isMobile
-          ? <BrokenMobile />
-          : <>
-            <Navbar />
-            <ParallaxProvider>
-              {children}
-            </ParallaxProvider>
-          </>
-        } */}
       </body>
     </html>
   )
