@@ -19,27 +19,25 @@
 }
 
 .primary {
-  composes: buttonLink;
   transition: background-color, 1s;
   color: #12141A;
   background-color: var(--accentGreen);
 }
 
 .primary:hover {
-  transition: background-color, 1s;
   background-color: #0FC;
+  box-shadow: 0px 0px 10px #0FC;
 }
 
 .secondary {
-  composes: buttonLink;
   transition: background-color, 1s;
   color: var(--accentGreen);
   background-color: #00000000;
 }
 
 .secondary:hover {
-  transition: background-color, 1s;
   background-color: rgba(0, 255, 204, 0.10);
+  box-shadow: 0px 0px 10px #0FC;
 }
 
 @media (max-width: 1250px) {
