@@ -1,11 +1,10 @@
 "use client";
 import { ParallaxProvider } from "react-scroll-parallax";
 
-import Script from "next/script";
-
 import "./global.css";
 
 import Navbar from "@/components/navbar/Navbar";
+import GoogleTag from "@/components/google-tag/GoogleTag";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,16 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="description" content="Portfolio website for software engineer Adam Thometz" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-63BV13DS8Q" />
-      <Script id='google-analytics'>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          
-          gtag('config', 'G-63BV13DS8Q');
-        `}
-      </Script>
+      <GoogleTag />
       <body>
         <Navbar />
         <ParallaxProvider>
