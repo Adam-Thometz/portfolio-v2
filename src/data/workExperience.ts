@@ -21,6 +21,15 @@ const projects: WorkExperience[] = [
     fakeUrl: "tara.teachers"
   },
   {
+    name: "8billionminds - Frontend",
+    description: "Imagine couch surfing combined with Wikipedia",
+    techStack: getTechStack(["Javascript", "CSS", "Java"]),
+    mp4: "mp4s/8bm.mp4",
+    fallback: "images/fallbacks/8bm.webp",
+    liveLink: new URL("https://www.8billionminds.com/"),
+    fakeUrl: "live.learning"
+  },
+  {
     name: "Clarity - Frontend",
     description: "A website to advertise the services of a local psychotherapist.",
     techStack: getTechStack(["React", "CSS", "AWS"]),
