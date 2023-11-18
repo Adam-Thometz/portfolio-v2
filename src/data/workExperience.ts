@@ -22,7 +22,7 @@ const projects: WorkExperience[] = [
   },
   {
     name: "8billionminds - Frontend",
-    description: "Imagine couch surfing combined with Wikipedia",
+    description: "Imagine couch surfing combined with Wikipedia. Free live learning sessions for everyone.",
     techStack: getTechStack(["Javascript", "CSS", "Java"]),
     mp4: "mp4s/8bm.mp4",
     fallback: "images/fallbacks/8bm.webp",
