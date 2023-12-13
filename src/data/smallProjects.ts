@@ -9,7 +9,7 @@ const smallProjects: PlaygroundProject[] = [
     mp4: "mp4s/acceptance-cave.mp4",
     fallback: "images/fallbacks/acceptance-cave.webp",
     liveLink: "/acceptance-cave",
-    githubLink: new URL("https://github.com/Adam-Thometz/Polyrhythm-Arduino"),
+    githubLink: new URL("https://github.com/Adam-Thometz/Acceptance-Cave"),
     fakeUrl: "acceptance.cave",
   },
   {

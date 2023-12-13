@@ -26,7 +26,7 @@ export default function Home() {
         <Work isMobile={isMobile} />
         <AboutMe isMobile={isMobile} />
         <Playground isMobile={isMobile} />
-        <Footer />
+        {isMobile && <Footer />}
       </Suspense>
     </main>
   )
