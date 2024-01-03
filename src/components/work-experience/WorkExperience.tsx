@@ -21,7 +21,7 @@ export default function WorkExperience({
 }: WorkExperience) {
   const formattedName = name.replaceAll(/ /g, '-');
   return <section className={styles.experience} id={`${EXPERIENCE}-${formattedName}`}>
-    {/* <SingleBlur /> */}
+    <SingleBlur />
     <section className={styles.experienceInfo}>
       <div className={styles.experienceHeader}>
         <H2>{name}</H2>

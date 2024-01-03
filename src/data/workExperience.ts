@@ -3,7 +3,16 @@ import { WorkExperience } from "./types";
 
 const projects: WorkExperience[] = [
   {
-    name: "Art Buddy - Frontend",
+    name: "SchoolPsychAI",
+    description: "Meet Sophia, an AI chatbot designed to assist school psychologists. Featuring the Sophia Summarizer.",
+    techStack: getTechStack(["NextJS", "Tailwind", "GraphQL", "AWS"]),
+    mp4: "mp4s/spai.mp4",
+    fallback: "images/fallbacks/spai.webp",
+    liveLink: new URL("https://www.app.schoolpsych.ai//"),
+    fakeUrl: "sophia.ai" 
+  },
+  {
+    name: "Art Buddy",
     description: "Arts-based and goal-aligned games and tools for the special education classroom.",
     techStack: getTechStack(["React", "Redux", "CSS", "Jest"]),
     mp4: "mp4s/art-buddy.mp4",
@@ -21,16 +30,7 @@ const projects: WorkExperience[] = [
     fakeUrl: "tara.teachers"
   },
   {
-    name: "8billionminds - Frontend",
-    description: "Imagine couch surfing combined with Wikipedia. Free live learning sessions for everyone.",
-    techStack: getTechStack(["Javascript", "CSS", "Java"]),
-    mp4: "mp4s/8bm.mp4",
-    fallback: "images/fallbacks/8bm.webp",
-    liveLink: new URL("https://www.8billionminds.com/"),
-    fakeUrl: "live.learning"
-  },
-  {
-    name: "Clarity - Frontend",
+    name: "Clarity",
     description: "A website to advertise the services of a local psychotherapist.",
     techStack: getTechStack(["React", "CSS", "AWS"]),
     mp4: "mp4s/clarity.mp4",
