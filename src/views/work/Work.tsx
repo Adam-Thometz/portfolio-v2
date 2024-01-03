@@ -6,13 +6,9 @@ import SingleBlur from "@/components/background/single-blur/SingleBlur";
 import projects from "@/data/workExperience";
 import { WORK } from "@/data/constants";
 
-type Props = {
-  isMobile: boolean
-}
-
-export default function Work({ isMobile }: Props) {
+export default function Work() {
   return <section id={WORK}>
-    {isMobile ? null : <SingleBlur />}
+    <SingleBlur />
     <div className={styles.workWrapper}>
     {projects.map((project, i) => (
       <WorkExperience

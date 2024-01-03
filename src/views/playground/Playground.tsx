@@ -8,13 +8,9 @@ import P from "@/components/paragraph/P";
 import smallProjects from "@/data/smallProjects";
 import { PLAYGROUND } from "@/data/constants";
 
-type Props = {
-  isMobile: boolean
-}
-
-export default function Playground({ isMobile }: Props) {  
+export default function Playground() {  
   return <section className={styles.playground} id={PLAYGROUND}>
-    {isMobile ? null : <BigBlur />}
+    <BigBlur />
     <header className={styles.playgroundHeader}>
       <H1>Playground</H1>
       <P>You&apos;ve read the resume, now focus on the fun!</P>

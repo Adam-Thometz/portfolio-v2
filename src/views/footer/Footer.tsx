@@ -15,6 +15,6 @@ export default function Footer() {
 
   return <footer className={styles.footer}>
     <P>Made by Adam Thometz ©{new Date().getFullYear()}</P>
-    <P>Like this portfolio? {VIEW_GITHUB_HERE} Made with Typescript and Next.js</P>
+    <P>Like this portfolio? {VIEW_GITHUB_HERE}</P>
   </footer>
 }
