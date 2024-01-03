@@ -26,6 +26,14 @@
   font-family: "Space Mono";
 }
 
+.hiddenText {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 75px;
+}
+
 @media (max-width: 500px) {
   .loader {
     height: 110vh;

@@ -12,6 +12,7 @@ import useVisited from "@/utils/useVisited";
 
 export default function Loader() {
   const [percent, setPercent] = useState(0);
+  const [showHiddenText, setShowHiddenText] = useState(false)
   const [visited, setVisited] = useVisited()
   const ref = useRef<HTMLElement | null>(null);
 
@@ -34,6 +35,10 @@ export default function Loader() {
     } else {
       setPercent(100);
       moveUp();
+      const timer = setTimeout(() => {
+        setShowHiddenText(true);
+        clearTimeout(timer);
+      }, 1500);
     }
   }, [percent, visited, setVisited]);
 
@@ -43,5 +48,6 @@ export default function Loader() {
   return <div className={styles.loader} ref={ref} suppressHydrationWarning>
     <Image src={logo} alt="" className={styles.logo}/>
     <span className={styles.numbers}>{percent}%</span>
+    {showHiddenText && <span className={styles.hiddenText}>🧼😳🚿</span>}
   </div>
 }
