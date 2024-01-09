@@ -3,7 +3,7 @@ import { WorkExperience } from "./types";
 
 const projects: WorkExperience[] = [
   {
-    name: "SchoolPsychAI",
+    name: "School Psych AI",
     description: "Meet Sophia, an AI chatbot designed to assist school psychologists. Featuring the Sophia Summarizer.",
     techStack: getTechStack(["NextJS", "Tailwind", "GraphQL", "AWS", "Cypress"]),
     mp4: "mp4s/spai.mp4",
