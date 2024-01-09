@@ -5,11 +5,29 @@ const projects: WorkExperience[] = [
   {
     name: "SchoolPsychAI",
     description: "Meet Sophia, an AI chatbot designed to assist school psychologists. Featuring the Sophia Summarizer.",
-    techStack: getTechStack(["NextJS", "Tailwind", "GraphQL", "AWS"]),
+    techStack: getTechStack(["NextJS", "Tailwind", "GraphQL", "AWS", "Cypress"]),
     mp4: "mp4s/spai.mp4",
     fallback: "images/fallbacks/spai.webp",
     liveLink: new URL("https://www.app.schoolpsych.ai//"),
     fakeUrl: "sophia.ai" 
+  },
+  // {
+  //   name: "AI-Powered Human Solutions",
+  //   description: "A website advertising the services of an agency specializing in AI talent and business solutions.",
+  //   techStack: getTechStack(["NextJS", "Tailwind"]),
+  //   mp4: "mp4s/human-ai.mp4",
+  //   fallback: "images/fallbacks/human-ai.webp",
+  //   liveLink: new URL("https://main.d944bwg1jvvmi.amplifyapp.com/"),
+  //   fakeUrl: "human.ai"
+  // },
+  {
+    name: "TARA - AI Assistant",
+    description: "GPT-powered tools to help teachers create goals, quizzes, and tasks while saving hours of planning time.",
+    techStack: getTechStack(["Vue", "Django", "AWS", "Node"]),
+    mp4: "mp4s/ai-assistant.mp4",
+    fallback: "images/fallbacks/ai-assistant.webp",
+    liveLink: new URL("https://www.tarateachers.com/"),
+    fakeUrl: "tara.teachers"
   },
   {
     name: "Art Buddy",
@@ -21,17 +39,8 @@ const projects: WorkExperience[] = [
     fakeUrl: "art.buddy"
   },
   {
-    name: "TARA - AI Assistant",
-    description: "GPT-powered tools to help teachers create goals, quizzes, and tasks while saving hours of planning time.",
-    techStack: getTechStack(["Vue", "Django", "AWS", "Node"]),
-    mp4: "mp4s/ai-assistant.mp4",
-    fallback: "images/fallbacks/ai-assistant.webp",
-    liveLink: new URL("https://www.tarateachers.com/"),
-    fakeUrl: "tara.teachers"
-  },
-  {
     name: "Clarity",
-    description: "A website to advertise the services of a local psychotherapist.",
+    description: "A website advertising the services of a local psychotherapist.",
     techStack: getTechStack(["React", "CSS", "AWS"]),
     mp4: "mp4s/clarity.mp4",
     fallback: "images/fallbacks/clarity.webp",

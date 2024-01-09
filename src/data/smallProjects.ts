@@ -2,6 +2,16 @@ import getTechStack from "@/utils/getTechStack";
 import { PlaygroundProject } from "./types";
 
 const smallProjects: PlaygroundProject[] = [
+  // {
+  //   name: "Portfolio of Melody Acosta",
+  //   description: "I did the frontend and hosting for my wife's UX portfolio",
+  //   techStack: getTechStack(["Javascript"]),
+  //   mp4: "mp4s/acceptance-cave.mp4",
+  //   fallback: "images/fallbacks/acceptance-cave.webp",
+  //   liveLink: "/acceptance-cave",
+  //   githubLink: new URL("https://github.com/Adam-Thometz/Acceptance-Cave"),
+  //   fakeUrl: "acceptance.cave",
+  // },
   {
     name: "Browser Music Video",
     description: "Making visuals based on my own music! You can also be a DJ and mute some tracks",
@@ -54,7 +64,7 @@ const smallProjects: PlaygroundProject[] = [
   //   description: "My 1st capstone project from bootcamp. Curate your music and share with other users. Uses the Spotify API.",
   //   techStack: getTechStack(["Flask", "PostgresQL", "jQuery", "CSS"]),
   //   mp4: "mp4s/8-bit-clan.mp4",
-  //   githubLink: new URL("https://github.com/Adam-Thometz/Reptifeed"),
+  //   githubLink: new URL("https://github.com/Adam-Thometz/Musophile"),
   //   fakeUrl: "music.time",
   // },
 ];
